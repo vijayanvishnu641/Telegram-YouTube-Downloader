@@ -12,7 +12,7 @@
 from datetime import datetime, timedelta
 # i am  using the CW4RR10R/pyrogram so don't change anything stupidly
 from pyrogram import Client, Filters, InlineKeyboardButton, InlineKeyboardMarkup
-from Tg_YtDl import user_time
+from VRTX_DLYT import user_time
 from config import youtube_next_fetch
 from func.ytdlfunc import extractYt, create_buttons
 # this import is very import
@@ -44,9 +44,12 @@ async def ytdl(_, message):
                                      timedelta(minutes=youtube_next_fetch)
 
     except Exception:
-        await message.reply_text("Failed To Fetch Youtube Data...😔"
-                                 "Wait for {wait_time} or try other link"
-                                 "[ʍǟֆȶɛʀʍɨռɖ-ʋʀȶӼ](https://telegra.ph/file/3f287a7ff7bd6d63fbd60.jpg)")
+        await message.reply_text("Failed To Fetch Youtube Data...😔\n"
+                                    "REASON CAN BE:\n"
+                                    "-/Due to Copyright"
+                                    "./Due to too many requests in server"
+                                    "./Due to Link not supported"
+                                 )
         return
     buttons = InlineKeyboardMarkup(list(create_buttons(formats)))
     sentm = await message.reply_text("Select Audio or Video👇🏻")
