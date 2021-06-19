@@ -1,7 +1,6 @@
 from pyrogram import *
 from աɛɮռʀ import *
-from ʄɨɢʊʀɛ import *
-
+from ʄɨɢʊʀɛ.config import *
 
 TOKEN = Kati.TOKEN
 APP_ID = Kati.APP_ID

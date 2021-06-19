@@ -9,3 +9,4 @@ ytregex = r"^((?:https?:)?\/\/)?((?:www|m)\.)?((?:youtube\.com|youtu.be))(\/(?:[
 loop = asyncio.get_event_loop()
 HMM = "Better not fuck the code son!"
 LOADR =  "kalitron"
+TKST = "run"
