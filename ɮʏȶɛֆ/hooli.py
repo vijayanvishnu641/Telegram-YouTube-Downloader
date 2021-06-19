@@ -1,4 +1,5 @@
 from աɛɮռʀ import *
+from pyrogram import *
 
 def humanbytes(num, suffix='B'):
     if num is None:

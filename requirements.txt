@@ -1,6 +1,5 @@
-
 TgCrypto
-https://github.com/mastermindvrtx/Pyrogram_filters/archive/vrsync.zip
+https://github.com/calitronx/Pyrogram_filters/archive/vrsync.zip
 git+https://github.com/ytdl-org/youtube-dl
 wget
 pillow

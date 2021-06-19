@@ -1,10 +1,11 @@
-from pyrogram import Client
+from pyrogram import *
 from աɛɮռʀ import *
-import config
+from ʄɨɢʊʀɛ import *
 
-TOKEN = config.TOKEN
-APP_ID = config.APP_ID
-API_HASH = config.API_HASH
+
+TOKEN = Kati.TOKEN
+APP_ID = Kati.APP_ID
+API_HASH = Kati.API_HASH
 
 plugins = dict(
     root="ɛʟɛʍֆ",

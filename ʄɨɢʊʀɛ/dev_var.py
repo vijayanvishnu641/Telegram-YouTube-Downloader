@@ -1,0 +1,2 @@
+class Kvar:
+    KLOAD = "kalitron"
