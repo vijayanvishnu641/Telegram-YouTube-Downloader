@@ -1,6 +1,6 @@
 ##  Tҽʅҽɠɾαɱ-YσυTυႦҽ-Dσɯɳʅσαԃҽɾ 
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/mastermindvrtx/Telegram-YouTube-Downloader.git/tree/Vrtx)
-<img align="centre" src="https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg" alt="mastermindvrtx"/>
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/calitronx/Telegram-YouTube-Downloader.git/tree/Vrtx)
+<img align="centre" src="https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg" alt="calitronx"/>
 <img align="centre" src="http://ForTheBadge.com/images/badges/made-with-python.svg" />
 <img align="centre" src="https://img.shields.io/badge/Arch_Linux-1793D1?style=for-the-badge&logo=arch-linux&logoColor=white"/> 
 <img aligh="centre" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"/>
@@ -20,7 +20,7 @@
 **File size more then 2gb won't be downloaded due to telegram policy**
 
 ## Prerequisite: 
-* ffmpeg - [ https://github.com/mastermindvrtx/heroku-buildpack-ffmpeg-latest.git ]
+* ffmpeg - [ https://github.com/calitronx/heroku-buildpack-ffmpeg-latest.git ]
   
     
 ## Dependencies:
