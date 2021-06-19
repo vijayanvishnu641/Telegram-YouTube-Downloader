@@ -3,16 +3,12 @@ import config
 
 DOWNLOAD_LOCATION = "./Downloads"
 
-"""
-Get the telegram config files
-"""
 TOKEN = config.TOKEN
 APP_ID = config.APP_ID
 API_HASH = config.API_HASH
 
-
 plugins = dict(
-    root="workers",
+    root="ɛʟɛʍֆ",
 )
 
 Client(

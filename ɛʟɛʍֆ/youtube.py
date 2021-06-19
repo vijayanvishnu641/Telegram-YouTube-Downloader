@@ -1,10 +1,8 @@
 from datetime import datetime, timedelta
-# i am  using the CW4RR10R/pyrogram so don't change anything stupidly
 from pyrogram import Client, Filters, InlineKeyboardButton, InlineKeyboardMarkup
 from ʏօʊȶʊɮɛʟɨ import user_time
 from config import youtube_next_fetch
-from ռȶɨօռƈ.ytdlfunc import extractYt, create_buttons
-# this import is very import
+from ռȶɨօռƈ.mpegsdl import extractYt, create_buttons
 import wget
 import os
 from PIL import Image

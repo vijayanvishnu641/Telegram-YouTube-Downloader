@@ -20,9 +20,6 @@ def probe(ytdl_path):
 
 
 def duration(ytdl_path):
-    """
-    Video's duration in seconds, return a float number
-    """
     _json = probe(ytdl_path)
 
     if 'format' in _json:
@@ -30,7 +27,6 @@ def duration(ytdl_path):
             return float(_json['format']['duration'])
 
     if 'streams' in _json:
-        # commonly stream 0 is the video
         for s in _json['streams']:
             if 'duration' in s:
                 return float(s['duration'])
@@ -39,4 +35,4 @@ def duration(ytdl_path):
 
 
 if __name__ == "__main__":
-    print(duration("examplefile.mp4"))  # 10.008
+    print(duration("examplefile.mp4"))

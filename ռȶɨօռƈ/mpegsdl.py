@@ -14,12 +14,9 @@ def buttonmap(item):
         return [InlineKeyboardButton(f"{quality} 📹 {humanbytes(item['filesize'])}",
                                      callback_data=f"ytdata||video||{item['format_id']}||{item['yturl']}")]
 
-# Return a array of Buttons
 def create_buttons(quailitylist):
     return map(buttonmap, quailitylist)
 
-
-# extract Youtube info
 def extractYt(yturl):
     ydl = youtube_dl.YoutubeDL()
     with ydl:
@@ -34,9 +31,6 @@ def extractYt(yturl):
 
         return r['title'], r['thumbnail'], qualityList
 
-
-#  Need to work 
-
 def downloadyt(url, fmid, custom_progress):
      ydl_opts = {
          'format': f"{fmid}+bestaudio",
@@ -47,15 +41,9 @@ def downloadyt(url, fmid, custom_progress):
      with youtube_dl.YoutubeDL(ydl_opts) as ydl:
          ydl.download([url])
 
-
-# check https://github.com/SpEcHiDe/AnyDLBot
-"""
-docvideo is under construction 
-"""
 async def downloadvideocli(command_to_exec):
     process = await asyncio.create_subprocess_exec(
         *command_to_exec,
-        # stdout must a pipe to be accessible as process.stdout
         stdout=asyncio.subprocess.PIPE,
         stderr=asyncio.subprocess.PIPE, )
     stdout, stderr = await process.communicate()
@@ -70,7 +58,6 @@ async def downloadvideocli(command_to_exec):
 async def downloadaudiocli(command_to_exec):
     process = await asyncio.create_subprocess_exec(
         *command_to_exec,
-        # stdout must a pipe to be accessible as process.stdout
         stdout=asyncio.subprocess.PIPE,
         stderr=asyncio.subprocess.PIPE, )
     stdout, stderr = await process.communicate()
