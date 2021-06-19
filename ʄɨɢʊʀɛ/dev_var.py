@@ -1,2 +1,4 @@
+from աɛɮռʀ import *
+
 class Kvar:
-    KLOAD = "kalitron"
+    KLOAD = LOADR
