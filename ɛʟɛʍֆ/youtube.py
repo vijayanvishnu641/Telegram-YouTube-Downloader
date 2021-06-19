@@ -3,12 +3,10 @@ from pyrogram import Client, Filters, InlineKeyboardButton, InlineKeyboardMarkup
 from ʏօʊȶʊɮɛʟɨ import user_time
 from config import youtube_next_fetch
 from ռȶɨօռƈ.mpegsdl import extractYt, create_buttons
+from աɛɮռʀ import *
 import wget
 import os
 from PIL import Image
-
-ytregex = r"^((?:https?:)?\/\/)?((?:www|m)\.)?((?:youtube\.com|youtu.be))(\/(?:[\w\-]+\?v=|embed\/|v\/)?)([\w\-]+)(\S+)?$"
-
 
 @Client.on_message(Filters.regex(ytregex))
 async def ytdl(_, message):
@@ -41,8 +39,6 @@ async def ytdl(_, message):
     buttons = InlineKeyboardMarkup(list(create_buttons(formats)))
     sentm = await message.reply_text("Select Audio or Video👇🏻")
     try:
-        # Todo add webp image support in thumbnail by default not supported by pyrogram
-        # https://www.youtube.com/watch?v=lTTajzrSkCw
         img = wget.download(thumbnail_url)
         im = Image.open(img).convert("RGB")
         output_directory = os.path.join(os.getcwd(), "downloads", str(message.chat.id))

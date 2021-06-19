@@ -1,5 +1,6 @@
-import asyncio
 import os
+from աɛɮռʀ import *
+
 from pyrogram import (Client,
                       InlineKeyboardButton,
                       InlineKeyboardMarkup,
@@ -35,12 +36,9 @@ async def catch_youtube_fmtid(c, m):
         raise ContinuePropagation
 
 
-
 @Client.on_callback_query()
 async def catch_youtube_dldata(c, q):
     cb_data = q.data.strip()
-    #print(q.message.chat.id)
-    # Callback Data Check
     yturl = cb_data.split("||")[-1]
     format_id = cb_data.split("||")[-2]
     thumb_image_path = "/app/downloads" + \
@@ -50,7 +48,6 @@ async def catch_youtube_dldata(c, q):
         width = 0
         height = 0
         metadata = extractMetadata(createParser(thumb_image_path))
-        #print(metadata)
         if metadata.has("width"):
             width = metadata.get("width")
         if metadata.has("height"):
@@ -61,7 +58,6 @@ async def catch_youtube_dldata(c, q):
         else:
             img.resize((90, height))
         img.save(thumb_image_path, "JPEG")
-     #   print(thumb_image_path)
     if not cb_data.startswith(("video", "audio", "docaudio")):
         print("no data found")
         raise ContinuePropagation
@@ -74,7 +70,6 @@ async def catch_youtube_dldata(c, q):
     await q.edit_message_reply_markup(
         InlineKeyboardMarkup([[InlineKeyboardButton("Downloading🔻All-quality", callback_data="down")]]))
     filepath = os.path.join(userdir, filext)
-    # await q.edit_message_reply_markup([[InlineKeyboardButton("⚡Transcoding⚡")]])
 
     audio_command = [
         "youtube-dl",
@@ -84,9 +79,7 @@ async def catch_youtube_dldata(c, q):
         "--audio-format", "mp3",
         "--audio-quality", format_id,
         "-o", filepath,
-        yturl,
-
-    ]
+        yturl]
 
     video_command = [
         "youtube-dl",
@@ -95,8 +88,6 @@ async def catch_youtube_dldata(c, q):
         "-f", f"{format_id}+bestaudio",
         "-o", filepath,
         "--hls-prefer-ffmpeg", yturl]
-
-    loop = asyncio.get_event_loop()
 
     med = None
     if cb_data.startswith("audio"):
@@ -128,23 +119,10 @@ async def catch_youtube_dldata(c, q):
             thumb=thumb_image_path,
             caption=("ፑ𝐫0ṃ @vrtxytbot📥"),
         )
-        
-#docvideo needs work
-    #if cb_data.startswith("docvideo"):
-     #   filename = await downloadvideocli(video_command)
-      #  dur = round(duration(filename))
-       # med = InputMediaDocument(
-        #    media=filename,
-       #     thumb=thumb_image_path,
-      #      caption=("ፑ𝐫0ṃ\n@YoutubeDownloadVrtx_Bot📥"),
-    #    )
-    
-    
     if med:
         loop.create_task(send_file(c, q, med, filename))
     else:
         print("media not found")
-
 
 async def send_file(c, q, med, filename):
     print(med)

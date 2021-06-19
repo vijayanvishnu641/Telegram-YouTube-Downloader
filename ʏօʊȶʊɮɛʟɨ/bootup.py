@@ -1,7 +1,6 @@
 from pyrogram import Client
+from աɛɮռʀ import *
 import config
-
-DOWNLOAD_LOCATION = "./Downloads"
 
 TOKEN = config.TOKEN
 APP_ID = config.APP_ID

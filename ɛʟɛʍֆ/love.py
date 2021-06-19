@@ -1,9 +1,8 @@
 from pyrogram import Client, Filters, StopPropagation, InlineKeyboardButton, InlineKeyboardMarkup
-
+from աɛɮռʀ import *
 
 @Client.on_message(Filters.command(["love"]), group=-2)
-async def love(client, message):
-    # return
+async def love(_, message):
     joinButton = InlineKeyboardMarkup([
         [InlineKeyboardButton("💋LOVE💋:", url="https://t.me/vrtxmusic")],
     ])

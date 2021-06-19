@@ -1,7 +1,8 @@
 from pyrogram import Client, Filters
+from աɛɮռʀ import *
 
 @Client.on_message(Filters.command(["help"]))
-async def help(client, message):
+async def help(_, message):
     helptxt = f"""/help:[📥](https://telegra.ph/file/39812237fd7a1bfc02532.jpg)\n
                  .˜”*°•**InChat**•°*”˜.
 Copy any Valid Youtube link and paste inside the bot and follow the prompts.

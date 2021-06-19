@@ -1,2 +1,1 @@
-users ={}
-user_time = {}
+from .bootup import *
