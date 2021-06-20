@@ -1,8 +1,7 @@
 import os
 from ʄɨɢʊʀɛ import *
-os.system("git clone https://github.com/ytdl-org/youtube-dl")
 os.system("pip install -U pip")
-os.system("pip install elemt.txt")
+os.system("pip install -r elemt.txt")
 if Kvar.WIDEV is TKST:
     os.system("python -m ʏօʊȶʊɮɛʟɨ")
 else:

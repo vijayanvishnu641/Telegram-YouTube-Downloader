@@ -12,4 +12,3 @@ async def help(_, message):
         "https://telegra.ph/file/ed28706fff93c4a2956e5.jpg",
         caption=helptxt
         )
-    await message.reply_text(helptxt)
