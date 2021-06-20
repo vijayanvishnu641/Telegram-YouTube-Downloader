@@ -1,7 +1,7 @@
 from datetime import datetime, timedelta
 from pyrogram import Client, Filters, InlineKeyboardButton, InlineKeyboardMarkup
 from ʏօʊȶʊɮɛʟɨ import user_time
-from config import youtube_next_fetch
+from ʄɨɢʊʀɛ import youtube_next_fetch
 from ռȶɨօռƈ.mpegsdl import extractYt, create_buttons
 from աɛɮռʀ import *
 import wget

@@ -6,7 +6,7 @@
 <img aligh="centre" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"/>
 
 <p align="centre">
-  <img src="https://telegra.ph/file/39812237fd7a1bfc02532.jpg">
+  <img src="https://telegra.ph/file/ed28706fff93c4a2956e5.jpg">
 </p>
 * Commands YouTube for Audio & Video and sends it to telegram after receiving valid URL [Do not forwarded any just copy and paste the link]
 * Reach me on Telegram (https://t.me/vrtxytbot)

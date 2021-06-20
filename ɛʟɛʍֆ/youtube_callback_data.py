@@ -23,15 +23,19 @@ async def catch_youtube_fmtid(c, m):
         media_type = cb_data.split("||")[-3].strip()
         print(media_type)
         if media_type == 'audio':
-            buttons = InlineKeyboardMarkup([[InlineKeyboardButton(
-                "Download🎧mp3", callback_data=f"{media_type}||{format_id}||{yturl}"), InlineKeyboardButton("Document",
-                                                                                                    callback_data=f"docaudio||{format_id}||{yturl}")]])
+            buttons = InlineKeyboardMarkup([[
+                InlineKeyboardButton(
+                "Download🎧mp3",
+                callback_data=f"{media_type}||{format_id}||{yturl}"),
+                # InlineKeyboardButton("Document",
+                # callback_data=f"docaudio||{format_id}||{yturl}"
+                # )
+                ]])
         else:
             buttons = InlineKeyboardMarkup([[InlineKeyboardButton(
                 "Download📽️mp4", callback_data=f"{media_type}||{format_id}||{yturl}")]])
 
         await m.edit_message_reply_markup(buttons)
-
     else:
         raise ContinuePropagation
 
@@ -53,24 +57,31 @@ async def catch_youtube_dldata(c, q):
         if metadata.has("height"):
             height = metadata.get("height")
         img = Image.open(thumb_image_path)
-        if cb_data.startswith(("audio", "docaudio", "docvideo")):
+        if cb_data.startswith(("audio",
+                            #    "docaudio",
+                            #    "docvideo"
+                               )):
             img.resize((320, height))
         else:
             img.resize((90, height))
         img.save(thumb_image_path, "JPEG")
-    if not cb_data.startswith(("video", "audio", "docaudio")):
+    if not cb_data.startswith(("video",
+                               "audio",
+                            #    "docaudio"
+                               )):
         print("no data found")
         raise ContinuePropagation
 
     filext = "%(title)s.%(ext)s"
-    userdir = os.path.join(os.getcwd(), "downloads", str(q.message.chat.id))
+    userdir = os.path.join(os.getcwd(),
+                           "downloads",
+                           str(q.message.chat.id))
 
     if not os.path.isdir(userdir):
         os.makedirs(userdir)
     await q.edit_message_reply_markup(
-        InlineKeyboardMarkup([[InlineKeyboardButton("Downloading🔻All-quality", callback_data="down")]]))
+        InlineKeyboardMarkup([[InlineKeyboardButton("Downloading🔻", callback_data="down")]]))
     filepath = os.path.join(userdir, filext)
-
     audio_command = [
         "youtube-dl",
         "-c",
@@ -80,7 +91,6 @@ async def catch_youtube_dldata(c, q):
         "--audio-quality", format_id,
         "-o", filepath,
         yturl]
-
     video_command = [
         "youtube-dl",
         "-c",
@@ -88,7 +98,6 @@ async def catch_youtube_dldata(c, q):
         "-f", f"{format_id}+bestaudio",
         "-o", filepath,
         "--hls-prefer-ffmpeg", yturl]
-
     med = None
     if cb_data.startswith("audio"):
         filename = await downloadaudiocli(audio_command)
@@ -112,13 +121,13 @@ async def catch_youtube_dldata(c, q):
             supports_streaming=True
         )
 
-    if cb_data.startswith("docaudio"):
-        filename = await downloadaudiocli(audio_command)
-        med = InputMediaDocument(
-            media=filename,
-            thumb=thumb_image_path,
-            caption=("ፑ𝐫0ṃ @vrtxytbot📥"),
-        )
+    # if cb_data.startswith("docaudio"):
+    #     filename = await downloadaudiocli(audio_command)
+    #     med = InputMediaDocument(
+    #         media=filename,
+    #         thumb=thumb_image_path,
+    #         caption=("ፑ𝐫0ṃ @vrtxytbot📥"),
+    #     )
     if med:
         loop.create_task(send_file(c, q, med, filename))
     else:
@@ -138,6 +147,6 @@ async def send_file(c, q, med, filename):
     finally:
         try:
             os.remove(filename)
-            os.remove(thumb_image_path)
+            # os.remove(thumb_image_path)
         except:
             pass
