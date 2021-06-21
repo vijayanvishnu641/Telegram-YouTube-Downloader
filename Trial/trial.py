@@ -14,3 +14,4 @@ youtube_ex = f"""
 **Some example youtube channels and songs if you don't know what u want**📺
 - type /love if i helped u anyway🍗🍔🍟🍕
 ```ƈǟʟɨȶʀօռӼ``` """
+youliurl = "https://telegra.ph/file/ed28706fff93c4a2956e5.jpg"

@@ -11,7 +11,10 @@ from Trial import *
     &filters.private
     &filters.command("love", prefixes='/')
                    ) 
-async def love(_, ydl: Message):
+async def love(
+    _,
+    ydl: Message
+    ):
   usrs = ydl.from_user.first_name
   joinButton = InlineKeyboardMarkup([
         [InlineKeyboardButton("💋LOVE:", url="https://t.me/tronxli")],
@@ -28,7 +31,7 @@ If you liked my project and want and just want to make me happy then you can:
 **<b>{usrs}**</b> Thanks a lot for using my bot🍰
 """      
   await ydl.reply_photo(
-        "https://telegra.ph/file/ed28706fff93c4a2956e5.jpg",
+        youliurl,
         reply_markup=joinButton,
         caption=Aww
         )

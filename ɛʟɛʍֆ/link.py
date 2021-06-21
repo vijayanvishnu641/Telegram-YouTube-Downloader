@@ -11,7 +11,10 @@ from pyrogram.types import (
     &filters.private
     &filters.command("link", prefixes='/')
                    ) 
-async def love(_, ydl: Message):
+async def link(
+    _,
+    ydl: Message
+    ):
     joinButton = InlineKeyboardMarkup([
         [InlineKeyboardButton("🍕𝗘𝗗𝗠🍕", url="https://t.me/")],
         [InlineKeyboardButton("🍤𝗟𝗼-𝗙𝗶🍤:", url="https://t.me/")],
@@ -20,7 +23,7 @@ async def love(_, ydl: Message):
         [InlineKeyboardButton("🍪𝗣𝗢𝗣🍪:", url="https://t.me/")]
     ])
     await ydl.reply_photo(
-        "https://telegra.ph/file/ed28706fff93c4a2956e5.jpg",
+        youliurl,
         reply_markup=joinButton,
         caption=youtube_ex
         )
