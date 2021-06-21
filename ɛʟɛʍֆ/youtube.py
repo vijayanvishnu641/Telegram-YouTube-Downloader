@@ -1,6 +1,6 @@
 from datetime import datetime, timedelta
 from pyrogram import Client, filters
-from ռȶɨօռƈ.ytdlfunc import extractYt, create_buttons
+from ռȶɨօռƈ import *
 from pyrogram.types import Message
 import wget
 import os

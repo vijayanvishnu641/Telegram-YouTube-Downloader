@@ -10,8 +10,7 @@ from pyrogram.types import (
     InputMediaVideo,
     InputMediaAudio
     )
-from ռȶɨօռƈ.ffmfunc import duration
-from ռȶɨօռƈ.ytdlfunc import downloadvideocli, downloadaudiocli
+from ռȶɨօռƈ import *
 from PIL import Image
 from hachoir.metadata import extractMetadata
 from hachoir.parser import createParser
