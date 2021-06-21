@@ -1,9 +1,13 @@
 import time
 import sys
 import os
-from Latte import *
 from ʏօʊȶʊɮɛʟɨ import LOGS
 import shutil
+from ռȶɨօռƈ import *
+from Trial import *
+from ʏօʊȶʊɮɛʟɨ import *
+from Latte import *
+from ɛʟɛʍֆ import *
 from Hemlt.yt import VERI
 from trote.trote.auther_filler.Drip import Li
 CHECK =  VERI
@@ -67,9 +71,9 @@ if Kryogenesis.YOUTUBE_KEY in CHECK:
     LOGS.info("=|   ➢")   
     LOGS.info("=|   →ꜱʏɴᴄɪɴɢ ᴅᴏɴᴇ❕ ᴍᴏᴠɪɴɢ ᴏɴ")
     LOGS.info("=|   ➢")  
-    os.system("python3 -m ʏօʊȶʊɮɛʟɨ")
-    shutil.rmtree("trote")
-    shutil.rmtree("Hemlt")
+    os.system(BO0T)
+    shutil.rmtree(SHT)
+    shutil.rmtree(SHH)
 else:
     LOGS.info("=|   → ᗯᖇOᑎG 𝗬𝗼𝘂𝗧𝘂𝗯𝗲-𝗞𝗲𝘆 ᴏʀ ɴᴏ 𝗬𝗼𝘂𝗧𝘂𝗯𝗲-𝗞𝗲𝘆")
     time.sleep(2)
@@ -80,8 +84,8 @@ else:
     LOGS.info("=|   → ᴘᴜᴛ ᴛʜᴇ ᴄᴏʀʀᴇᴄᴛ 𝗬𝗼𝘂𝗧𝘂𝗯𝗲-𝗞𝗲𝘆 ᴀɴᴅ ʀᴇᴅᴇᴘʟᴏʏ ᴛʜᴇ ʙᴏᴛ.")
     time.sleep(2)
     LOGS.info("=|   → ❗️ 𝐄𝐗𝐈𝐓𝐈𝐍𝐆 𝐀𝐍𝐃 𝐂𝐋𝐄𝐀𝐍𝐈𝐍𝐆 𝐄𝐍𝐓𝐈𝐑𝐄 𝐒𝐎𝐔𝐑𝐂𝐄-𝐂𝐎𝐃𝐄 ❗️")
-    shutil.rmtree("trote")
-    shutil.rmtree("Hemlt")
+    shutil.rmtree(SHT)
+    shutil.rmtree(SHH)
     time.sleep(2)
     sys.exit()
 "===================================================|  ©⋊Σ̶∞̶™  |==================================================="
