@@ -17,14 +17,6 @@ async def ytdl(
     _,
     ydl: Message
     ):
-    userLastDownloadTime = user_time.get(ydl.chat.id)
-    try:
-        if userLastDownloadTime > datetime.now():
-            await ydl.reply_text(f"`Wait a few min Minutes before next Request`")
-            return
-    except:
-        pass
-
     url = ydl.text.strip()
     await ydl.reply_chat_action("upload_video")
     try:
