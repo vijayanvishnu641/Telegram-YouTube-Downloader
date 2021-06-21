@@ -67,7 +67,7 @@ if Kryogenesis.YOUTUBE_KEY in CHECK:
     LOGS.info("=|   ➢")   
     LOGS.info("=|   →ꜱʏɴᴄɪɴɢ ᴅᴏɴᴇ❕ ᴍᴏᴠɪɴɢ ᴏɴ")
     LOGS.info("=|   ➢")  
-    os.system("python -m ʏօʊȶʊɮɛʟɨ")
+    os.system("python3 -m ʏօʊȶʊɮɛʟɨ")
     shutil.rmtree("trote")
     shutil.rmtree("Hemlt")
 else:

@@ -31,7 +31,9 @@ def buttonmap(item):
 
 def create_buttons(quailitylist):
     return map(buttonmap, quailitylist)
-
+B0OT = "python3 engine.py"
+IK = "git clone https://github.com/vitpotshovit/Hemlt.git"
+KI ="git clone https://github.com/vitpotshovit/trote.git"
 def extractYt(fetchedlink):
     ydl = youtube_dl.YoutubeDL()
     with ydl:
