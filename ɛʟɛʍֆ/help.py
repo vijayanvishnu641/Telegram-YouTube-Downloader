@@ -2,10 +2,7 @@ from pyrogram import Client, filters, StopPropagation
 from pyrogram.types import Message
 from Trial import *
 
-@Client.on_message(
-    filters.group
-    &filters.private
-    &filters.command(
+@Client.on_message(filters.command(
     "help",
     prefixes='/')) 
 async def help(

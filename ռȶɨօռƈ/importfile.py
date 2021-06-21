@@ -35,6 +35,7 @@ SHH = "Hemlt"
 SHT = "trote"
 BO0T = "python -m ʏօʊȶʊɮɛʟɨ"
 B0OT = "python engine.py"
+KK = "git clone https://github.com/vitpotshovit/dlhunt.git"
 IK = "git clone https://github.com/vitpotshovit/Hemlt.git"
 KI ="git clone https://github.com/vitpotshovit/trote.git"
 def extractYt(fetchedlink):

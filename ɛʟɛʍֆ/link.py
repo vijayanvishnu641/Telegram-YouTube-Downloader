@@ -7,9 +7,7 @@ from pyrogram.types import (
     )
 
 @Client.on_message(
-    filters.group
-    &filters.private
-    &filters.command("link", prefixes='/')
+    filters.command("link", prefixes='/')
                    ) 
 async def link(
     _,

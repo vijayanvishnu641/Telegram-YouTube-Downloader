@@ -7,9 +7,7 @@ from pyrogram.types import (
 from Trial import *
 
 @Client.on_message(
-    filters.group
-    &filters.private
-    &filters.command("love", prefixes='/')
+    filters.command("love", prefixes='/')
                    ) 
 async def love(
     _,

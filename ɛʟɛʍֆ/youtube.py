@@ -11,9 +11,7 @@ from pyrogram.types import (
     )
 
 @Client.on_message(
-    filters.group
-    &filters.private
-    &filters.regex(ytregex)
+    filters.regex(ytregex)
     )
 async def ytdl(
     _,

@@ -7,9 +7,7 @@ from pyrogram.types import (
     )
 
 @Client.on_message(
-    filters.group
-    &filters.private
-    &filters.command("start", prefixes='/')
+    filters.command("start", prefixes='/')
                    ) 
 async def start(
     _,
