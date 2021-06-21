@@ -59,7 +59,7 @@ async def catch_youtube_dldata(
             height = metadata.get("height")
         img = Image.open(urljpegclone)
         if fetch_elems.startswith((
-            "Get_Music",
+            "audio",
             )):
             img.resize((320, height))
         else:
@@ -67,7 +67,7 @@ async def catch_youtube_dldata(
         img.save(urljpegclone, "JPEG")
     if not fetch_elems.startswith((
         "video",
-        "Get_Music",
+        "audio",
         )):
         print("no data found")
         raise ContinuePropagation
@@ -89,9 +89,9 @@ async def catch_youtube_dldata(
         "youtube-dl",
         "-fetch",
         "--prefer-ffmpeg",
-        "--extract-Get_Music",
-        "--Get_Music-format", "mp3",
-        "--Get_Music-quality", format_id,
+        "--extract-audio",
+        "--audio-format", "mp3",
+        "--audio-quality", format_id,
         "-o", filepath,
         fetchedlink,
     ]
@@ -104,7 +104,7 @@ async def catch_youtube_dldata(
         "--hls-prefer-ffmpeg", fetchedlink]
     item_spawned = None
     
-    if fetch_elems.startswith("Get_Music"):
+    if fetch_elems.startswith("audio"):
         filename = await downloadaudiocli(audio_command)
         item_spawned = InputMediaAudio(
             media=filename,
