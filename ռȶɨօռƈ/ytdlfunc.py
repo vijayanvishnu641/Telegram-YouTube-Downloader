@@ -1,5 +1,11 @@
 from __future__ import unicode_literals
-from pyrogram import InlineKeyboardButton
+from pyrogram.types import (
+    InlineKeyboardButton,
+    InlineKeyboardMarkup,
+    InputMediaDocument,
+    InputMediaVideo,
+    InputMediaAudio
+    )
 import youtube_dl
 from humaner.hooli import humanbytes
 import asyncio
