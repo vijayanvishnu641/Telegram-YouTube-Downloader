@@ -4,6 +4,7 @@ from ռȶɨօռƈ import *
 from pyrogram.types import Message
 import wget
 import os
+from ʏօʊȶʊɮɛʟɨ import *
 from PIL import Image
 from Trial import *
 from pyrogram.types import (

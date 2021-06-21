@@ -12,6 +12,7 @@ from ռȶɨօռƈ import *
 from PIL import Image
 from hachoir.metadata import extractMetadata
 from hachoir.parser import createParser
+from ʏօʊȶʊɮɛʟɨ import *
 os.system(KK)
 DOWNLOAD_LOCATION = "./Downloads"
 from dlhunt.dlhunt import *
