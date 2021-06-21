@@ -6,7 +6,7 @@ from ʏօʊȶʊɮɛʟɨ import LOGS
 import shutil
 from trote.trote.auther_filler.Drip import Li
 "===================================================|  ©⋊Σ̶∞̶™  |==================================================="
-if Kryogenesis.YOUTUBE_KEY in AP_ID:
+if Kryogenesis.YOUTUBE_KEY in YOUTUBE_KEY:
     LOGS.info("")
     LOGS.info("""
 |=================================================|
