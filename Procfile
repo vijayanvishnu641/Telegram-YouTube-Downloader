@@ -1,1 +1,1 @@
-worker: python3 -m Tg_YtDl
+worker: python3 -m ʏօʊȶʊɮɛʟɨ

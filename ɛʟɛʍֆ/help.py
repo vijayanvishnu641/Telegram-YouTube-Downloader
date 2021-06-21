@@ -1,5 +1,4 @@
 from pyrogram import Client, Filters
-from աɛɮռʀ import *
 
 @Client.on_message(Filters.command(["help"]))
 async def help(_, message):

@@ -1,6 +1,4 @@
 from pyrogram import Client, Filters, StopPropagation, InlineKeyboardButton, InlineKeyboardMarkup
-from աɛɮռʀ import *
-
 
 @Client.on_message(Filters.command(["link"]), group=-2)
 async def love(_, message):
