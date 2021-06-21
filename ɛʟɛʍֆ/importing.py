@@ -16,26 +16,22 @@ os.system(KK)
 from dlhunt.dlhunt import *
 
 @Client.on_callback_query()
-async def catch_youtube_fmtid(
-    _,
-    buta):
-    fetch_elems = buta.data
-    if fetch_elems.startswith("fetchedfile||"):
-        fetchedlink = fetch_elems.split("||")[-1]
-        format_id = fetch_elems.split("||")[-2]
-        media_type = fetch_elems.split("||")[-3].strip()
+async def catch_youtube_fmtid(c, m):
+    cb_data = m.data
+    if cb_data.startswith("ytdata||"):
+        yturl = cb_data.split("||")[-1]
+        format_id = cb_data.split("||")[-2]
+        media_type = cb_data.split("||")[-3].strip()
         print(media_type)
         if media_type == 'audio':
-            pod = InlineKeyboardMarkup(
-                [[InlineKeyboardButton(
-                "Best-Mp3",
-                callback_data=f"{media_type}||{format_id}||{fetchedlink}")]])
+            buttons = InlineKeyboardMarkup([[InlineKeyboardButton(
+                "Audio", callback_data=f"{media_type}||{format_id}||{yturl}"),]])
         else:
-            pod = InlineKeyboardMarkup(
-                [[InlineKeyboardButton(
-                "Best-Mp4",
-                callback_data=f"{media_type}||{format_id}||{fetchedlink}")]])
-        await buta.edit_message_reply_markup(pod)
+            buttons = InlineKeyboardMarkup([[InlineKeyboardButton(
+                "Video", callback_data=f"{media_type}||{format_id}||{yturl}")]])
+
+        await m.edit_message_reply_markup(buttons)
+
     else:
         raise ContinuePropagation
 

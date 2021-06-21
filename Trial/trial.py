@@ -1,5 +1,6 @@
 import asyncio
 FIXING = 2
+wait_son = 0
 users ={}
 user_time = {}
 DOWNLOAD_LOCATION = "./Downloads"
