@@ -1,11 +1,12 @@
-import os
-from ռȶɨօռƈ import *
-from Trial import *
-from ʏօʊȶʊɮɛʟɨ import *
-from Latte import *
-from ɛʟɛʍֆ import *
+import youtube_dl
 "|►►►►►►►►►►►►►►►►►►►►►✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄|"
-os.system(INIT)
-os.system(TNIT)
-os.system(BO0T)
+def downloadyt(url, fmid, custom_progress):
+     ydl_opts = {
+         'format': f"{fmid}+bestaudio",
+         "outtmpl": "test+.%(ext)s",
+         'noplaylist': True,
+         'progress_hooks': [custom_progress],
+     }
+     with youtube_dl.YoutubeDL(ydl_opts) as ydl:
+         ydl.download([url])
 "|►►►►►►►►►►►►►►►►►►►►►✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄|"

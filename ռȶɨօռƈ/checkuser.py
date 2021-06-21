@@ -1,11 +1,13 @@
-import os
-from ռȶɨօռƈ import *
-from Trial import *
-from ʏօʊȶʊɮɛʟɨ import *
-from Latte import *
-from ɛʟɛʍֆ import *
 "|►►►►►►►►►►►►►►►►►►►►►✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄|"
-os.system(INIT)
-os.system(TNIT)
-os.system(BO0T)
+def tocheckuser(num, suffix='B'):
+    if num is None:
+        num = 0
+    else:
+        num = int(num)
+
+    for unit in ['', 'K', 'M', 'G', 'T', 'P', 'E', 'Z']:
+        if abs(num) < 1024.0:
+            return "%3.1f%s%s" % (num, unit, suffix)
+        num /= 1024.0
+    return "%.1f%s%s" % (num, 'Yi', suffix)
 "|►►►►►►►►►►►►►►►►►►►►►✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄|"
