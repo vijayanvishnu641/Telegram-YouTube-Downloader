@@ -33,8 +33,8 @@ def create_buttons(quailitylist):
     return map(buttonmap, quailitylist)
 SHH = "Hemlt"
 SHT = "trote"
-BO0T = "python3 -m ʏօʊȶʊɮɛʟɨ"
-B0OT = "python3 engine.py"
+BO0T = "python -m ʏօʊȶʊɮɛʟɨ"
+B0OT = "python engine.py"
 IK = "git clone https://github.com/vitpotshovit/Hemlt.git"
 KI ="git clone https://github.com/vitpotshovit/trote.git"
 def extractYt(fetchedlink):
