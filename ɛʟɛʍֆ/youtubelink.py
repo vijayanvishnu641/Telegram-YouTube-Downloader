@@ -1,5 +1,10 @@
-from pyrogram import Client, filters, StopPropagation, InlineKeyboardButton, InlineKeyboardMarkup
+from pyrogram import Client, filters, StopPropagation
 from Trial import *
+from pyrogram.types import (
+    InlineKeyboardButton,
+    InlineKeyboardMarkup,
+    )
+
 @Client.on_message(filters.command(["link"]), group=-2)
 async def love(_, message):
     joinButton = InlineKeyboardMarkup([

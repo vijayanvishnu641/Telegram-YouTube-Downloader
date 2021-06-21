@@ -1,14 +1,14 @@
 import asyncio
 import os
 from Trial import *
-from pyrogram import (Client,
-                      InlineKeyboardButton,
-                      InlineKeyboardMarkup,
-                      ContinuePropagation,
-                      InputMediaDocument,
-                      InputMediaVideo,
-                      InputMediaAudio)
-
+from pyrogram import Client, ContinuePropagation
+from pyrogram.types import (
+    InlineKeyboardButton,
+    InlineKeyboardMarkup,
+    InputMediaDocument,
+    InputMediaVideo,
+    InputMediaAudio
+    )
 from ռȶɨօռƈ.ffmfunc import duration
 from ռȶɨօռƈ.ytdlfunc import downloadvideocli, downloadaudiocli
 from PIL import Image

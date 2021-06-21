@@ -1,4 +1,8 @@
-from pyrogram import Client, filters, StopPropagation, InlineKeyboardButton, InlineKeyboardMarkup
+from pyrogram import Client, filters, StopPropagation
+from pyrogram.types import (
+    InlineKeyboardButton,
+    InlineKeyboardMarkup,
+    )
 from Trial import *
 
 @Client.on_message(filters.command(["love"]), group=-2)

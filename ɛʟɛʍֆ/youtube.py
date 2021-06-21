@@ -1,11 +1,13 @@
 from datetime import datetime, timedelta
-from pyrogram import Client, filters, InlineKeyboardButton, InlineKeyboardMarkup
+from pyrogram import Client, filters
 from ռȶɨօռƈ.ytdlfunc import extractYt, create_buttons
 import wget
 import os
 from PIL import Image
 from Trial import *
-
+from pyrogram.types import (
+    InlineKeyboardMarkup,
+    )
 
 @Client.on_message(filters.regex(ytregex))
 async def ytdl(_, message):
