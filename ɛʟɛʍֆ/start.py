@@ -5,7 +5,11 @@ from pyrogram.types import (
     InlineKeyboardMarkup,
     )
 
-@Client.on_message(filters.command(["start"]), group=-2)
+@Client.on_message(
+    filters.group
+    &filters.private
+    &filters.command("start", prefixes='/')
+                   ) 
 async def start(_, message):
     usrs = message.from_user.first_name
     joinButton = InlineKeyboardMarkup([

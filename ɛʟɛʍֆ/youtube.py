@@ -27,7 +27,7 @@ async def ytdl(_, message):
 
         now = datetime.now()
         user_time[message.chat.id] = now + \
-                                     timedelta(minutes=youtube_next_fetch)
+                                     timedelta(minutes=wait_son)
 
     except Exception:
         await message.reply_text("`Failed To Fetch Youtube Data...😔\nWait for {wait_time} or try other link")

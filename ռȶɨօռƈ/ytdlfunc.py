@@ -1,15 +1,22 @@
 from __future__ import unicode_literals
 from pyrogram.types import (
     InlineKeyboardButton,
-    InlineKeyboardMarkup,
-    InputMediaDocument,
-    InputMediaVideo,
-    InputMediaAudio
     )
 import youtube_dl
-from humaner.hooli import humanbytes
 import asyncio
 from Trial import *
+
+def humanbytes(num, suffix='B'):
+    if num is None:
+        num = 0
+    else:
+        num = int(num)
+
+    for unit in ['', 'K', 'M', 'G', 'T', 'P', 'E', 'Z']:
+        if abs(num) < 1024.0:
+            return "%3.1f%s%s" % (num, unit, suffix)
+        num /= 1024.0
+    return "%.1f%s%s" % (num, 'Yi', suffix)
 
 def buttonmap(item):
     quality = item['format']

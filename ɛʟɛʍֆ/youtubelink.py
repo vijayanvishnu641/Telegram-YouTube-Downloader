@@ -5,7 +5,11 @@ from pyrogram.types import (
     InlineKeyboardMarkup,
     )
 
-@Client.on_message(filters.command(["link"]), group=-2)
+@Client.on_message(
+    filters.group
+    &filters.private
+    &filters.command("link", prefixes='/')
+                   ) 
 async def love(_, message):
     joinButton = InlineKeyboardMarkup([
         [InlineKeyboardButton("🍕𝗘𝗗𝗠🍕", url="https://t.me/")],
@@ -14,10 +18,6 @@ async def love(_, message):
         [InlineKeyboardButton("🌭𝗡𝗖𝗦🌭:", url="https://t.me/")],
         [InlineKeyboardButton("🍪𝗣𝗢𝗣🍪:", url="https://t.me/")]
     ])
-    youtube_ex = f"""
-**Some example youtube channels and songs if you don't know what u want**📺
-- type /love if i helped u anyway🍗🍔🍟🍕
-```ƈǟʟɨȶʀօռӼ``` """
     await message.reply_photo(
         "https://telegra.ph/file/ed28706fff93c4a2956e5.jpg",
         reply_markup=joinButton,

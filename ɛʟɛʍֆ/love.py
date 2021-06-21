@@ -5,7 +5,11 @@ from pyrogram.types import (
     )
 from Trial import *
 
-@Client.on_message(filters.command(["love"]), group=-2)
+@Client.on_message(
+    filters.group
+    &filters.private
+    &filters.command("love", prefixes='/')
+                   ) 
 async def love(_, message):
   usrs = message.from_user.first_name
   joinButton = InlineKeyboardMarkup([
