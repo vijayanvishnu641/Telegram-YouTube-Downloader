@@ -1,7 +1,7 @@
 {
     "name": "YoutubeDownloader",
     "description": "Download any Youtube Audio/Video at full quality",
-    "repository": "https://github.com/calitronx/YouTube-Downloader.git",
+    "repository": "https://github.com/calitronx/Telegram-YouTube-Downloader.git",
     "logo": "https://telegra.ph/file/ed28706fff93c4a2956e5.jpg",
     "success_url": "https://t.me/vrtxmusic",
     "website": "https://t,me/vrtxmusic", 
