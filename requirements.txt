@@ -1,7 +1,7 @@
 TgCrypto
-https://github.com/calitronx/Pyrogram_filters/archive/vrsync.zip
 git+https://github.com/ytdl-org/youtube-dl
 ffmpeg-python
+pyrogram
 wget
 pillow
 hachoir
