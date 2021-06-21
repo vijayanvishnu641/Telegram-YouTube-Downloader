@@ -36,10 +36,7 @@ async def ytdl(
         timedelta(minutes=wait_son)
 
     except Exception:
-        await ydl.reply_text(f"""
-`Failed To Fetch Youtube Data...`
-Wait for a few min or try other link
-""")
+        await ydl.reply_text(f"`Wait for a few min or try other link`")
         return
     pod = InlineKeyboardMarkup(list(create_buttons(formats)))
     sentm = await ydl.reply_text("Select Best-Mp3 or Best-Mp4👇🏻")
