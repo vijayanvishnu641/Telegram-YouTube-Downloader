@@ -46,7 +46,7 @@ async def catch_youtube_dldata(
     fetch_elems = data_pod.data.strip()
     fetchedlink = fetch_elems.split("||")[-1]
     format_id = fetch_elems.split("||")[-2]
-    urljpegclone = "/ytliBot/fetcheditem" + \
+    urljpegclone = "/app/downloads" + \
         "/" + str(data_pod.message.chat.id) + ".jpeg"
     print(urljpegclone)
     if os.path.exists(urljpegclone):
@@ -73,7 +73,7 @@ async def catch_youtube_dldata(
         raise ContinuePropagation
 
     filext = "%(title)s.%(ext)s"
-    imported_host = os.path.join(os.getcwd(), "fetcheditem", str(data_pod.message.chat.id))
+    imported_host = os.path.join(os.getcwd(), "downloads", str(data_pod.message.chat.id))
 
     if not os.path.isdir(imported_host):
         os.makedirs(imported_host)

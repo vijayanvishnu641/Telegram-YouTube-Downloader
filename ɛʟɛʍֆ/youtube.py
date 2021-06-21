@@ -45,7 +45,7 @@ Wait for a few min or try other link
     try:
         img = wget.download(thumbnail_url)
         im = Image.open(img).convert("RGB")
-        output_directory = os.path.join(os.getcwd(), "fetcheditem", str(ydl.chat.id))
+        output_directory = os.path.join(os.getcwd(), "downloads", str(ydl.chat.id))
         if not os.path.isdir(output_directory):
             os.makedirs(output_directory)
         urljpegclone = f"{output_directory}.jpg"
