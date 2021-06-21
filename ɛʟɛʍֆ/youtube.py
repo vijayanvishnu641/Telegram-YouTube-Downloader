@@ -28,7 +28,7 @@ async def ytdl(
         pass
     "|►►►►►►►►►►►►►►►►►►►►►✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄|"
     url = ydl.text.strip()
-    await ydl.reply_chat_action("recording_video")
+    await ydl.reply_chat_action("typing")
     try:
         title, thumbnail_url, formats = extractYt(url)
         now = datetime.now()
