@@ -20,10 +20,10 @@ def tocheckuser(num, suffix='B'):
 
 def buttonmap(item):
     quality = item['format']
-    if "Get_Music" in quality:
+    if "audio" in quality:
         return [InlineKeyboardButton(
         f"{quality} 🎵 {tocheckuser(item['filesize'])}",
-        callback_data=f"fetchedfile||Get_Music||{item['format_id']}||{item['fetchedlink']}")]
+        callback_data=f"fetchedfile||audio||{item['format_id']}||{item['fetchedlink']}")]
     else:
         return [InlineKeyboardButton(
         f"{quality} 📹 {tocheckuser(item['filesize'])}",
