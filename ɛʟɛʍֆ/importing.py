@@ -84,7 +84,6 @@ async def catch_youtube_dldata(
         callback_data="down")
         ]]))
     filepath = os.path.join(imported_host, filext)
-    await data_pod.edit_message_reply_markup([[InlineKeyboardButton("Processing..")]])
 
     audio_command = [
         "youtube-dl",

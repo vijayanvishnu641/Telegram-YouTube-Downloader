@@ -1,5 +1,5 @@
 import asyncio
-wait_son = 1
+wait_son = 0
 FIXING = 2
 users ={}
 user_time = {}
