@@ -1,7 +1,0 @@
-build:
-  docker:
-      worker: Dockerfile
-      web: Dockerfile
-run:
-  web: bash engine.sh
-  web: python3 -m Tg_YtDl
