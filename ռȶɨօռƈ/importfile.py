@@ -23,11 +23,11 @@ def buttonmap(item):
     if "Get_Music" in quality:
         return [InlineKeyboardButton(
         f"{quality} 🎵 {tocheckuser(item['filesize'])}",
-        callback_data=f"fetchedfile||Get_Music||{item['gotfilekey']}||{item['fetchedlink']}")]
+        callback_data=f"fetchedfile||Get_Music||{item['format_id']}||{item['fetchedlink']}")]
     else:
         return [InlineKeyboardButton(
         f"{quality} 📹 {tocheckuser(item['filesize'])}",
-        callback_data=f"fetchedfile||video||{item['gotfilekey']}||{item['fetchedlink']}")]
+        callback_data=f"fetchedfile||video||{item['format_id']}||{item['fetchedlink']}")]
 
 def create_buttons(quailitylist):
     return map(buttonmap, quailitylist)
@@ -46,7 +46,7 @@ def extractYt(fetchedlink):
         for format in r['formats']:
             if not "dash" in str(format['format']).lower():
                 qualityList.append(
-                {"format": format['format'], "filesize": format['filesize'], "gotfilekey": format['gotfilekey'],
+                {"format": format['format'], "filesize": format['filesize'], "format_id": format['format_id'],
                  "fetchedlink": fetchedlink})
         return r['title'], r['thumbnail'], qualityList
     

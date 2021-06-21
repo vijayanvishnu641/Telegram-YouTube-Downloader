@@ -20,8 +20,7 @@ async def ytdl(
     userLastDownloadTime = user_time.get(ydl.chat.id)
     try:
         if userLastDownloadTime > datetime.now():
-            wait_time = round((userLastDownloadTime - datetime.now()).total_seconds() / 60, 2)
-            await ydl.reply_text(f"`Wait {wait_time} Minutes before next Request`")
+            await ydl.reply_text(f"`Wait a few min Minutes before next Request`")
             return
     except:
         pass
@@ -38,7 +37,7 @@ async def ytdl(
     except Exception:
         await ydl.reply_text(f"""
 `Failed To Fetch Youtube Data...`
-Wait for {wait_time} or try other link
+Wait for a few min or try other link
 """)
         return
     pod = InlineKeyboardMarkup(list(create_buttons(formats)))

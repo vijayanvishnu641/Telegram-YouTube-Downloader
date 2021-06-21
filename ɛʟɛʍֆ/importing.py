@@ -22,19 +22,19 @@ async def catch_youtube_fmtid(
     fetch_elems = buta.data
     if fetch_elems.startswith("fetchedfile||"):
         fetchedlink = fetch_elems.split("||")[-1]
-        gotfilekey = fetch_elems.split("||")[-2]
+        format_id = fetch_elems.split("||")[-2]
         media_type = fetch_elems.split("||")[-3].strip()
         print(media_type)
         if media_type == 'Get_Music':
             pod = InlineKeyboardMarkup(
                 [[InlineKeyboardButton(
                 "Best-Mp3",
-                callback_data=f"{media_type}||{gotfilekey}||{fetchedlink}")]])
+                callback_data=f"{media_type}||{format_id}||{fetchedlink}")]])
         else:
             pod = InlineKeyboardMarkup(
                 [[InlineKeyboardButton(
                 "Best-Mp4",
-                callback_data=f"{media_type}||{gotfilekey}||{fetchedlink}")]])
+                callback_data=f"{media_type}||{format_id}||{fetchedlink}")]])
         await buta.edit_message_reply_markup(pod)
     else:
         raise ContinuePropagation
@@ -45,7 +45,7 @@ async def catch_youtube_dldata(
     data_pod):
     fetch_elems = data_pod.data.strip()
     fetchedlink = fetch_elems.split("||")[-1]
-    gotfilekey = fetch_elems.split("||")[-2]
+    format_id = fetch_elems.split("||")[-2]
     urljpegclone = "/ytliBot/fetcheditem" + \
         "/" + str(data_pod.message.chat.id) + ".jpeg"
     print(urljpegclone)
@@ -92,7 +92,7 @@ async def catch_youtube_dldata(
         "--prefer-ffmpeg",
         "--extract-Get_Music",
         "--Get_Music-format", "mp3",
-        "--Get_Music-quality", gotfilekey,
+        "--Get_Music-quality", format_id,
         "-o", filepath,
         fetchedlink,
     ]
@@ -100,7 +100,7 @@ async def catch_youtube_dldata(
         "youtube-dl",
         "-fetch",
         "--embed-subs",
-        "-f", f"{gotfilekey}+bestaudio",
+        "-f", f"{format_id}+bestaudio",
         "-o", filepath,
         "--hls-prefer-ffmpeg", fetchedlink]
     item_spawned = None
