@@ -3,4 +3,4 @@ from .importing import *
 from .love import *
 from .start import *
 from .youtube import *
-from .youtubelink import *
+from .link import *
