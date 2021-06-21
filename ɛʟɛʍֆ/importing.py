@@ -2,6 +2,7 @@
 import os
 from Trial import *
 from pyrogram import Client, ContinuePropagation
+from pyrogram.types import Message
 from pyrogram.types import (
     InlineKeyboardButton,
     InlineKeyboardMarkup,

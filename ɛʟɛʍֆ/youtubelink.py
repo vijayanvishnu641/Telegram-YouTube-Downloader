@@ -1,4 +1,5 @@
 from pyrogram import Client, filters, StopPropagation
+from pyrogram.types import Message
 from Trial import *
 from pyrogram.types import (
     InlineKeyboardButton,
@@ -10,7 +11,7 @@ from pyrogram.types import (
     &filters.private
     &filters.command("link", prefixes='/')
                    ) 
-async def love(_, message):
+async def love(_, ydl: Message):
     joinButton = InlineKeyboardMarkup([
         [InlineKeyboardButton("🍕𝗘𝗗𝗠🍕", url="https://t.me/")],
         [InlineKeyboardButton("🍤𝗟𝗼-𝗙𝗶🍤:", url="https://t.me/")],
@@ -18,7 +19,7 @@ async def love(_, message):
         [InlineKeyboardButton("🌭𝗡𝗖𝗦🌭:", url="https://t.me/")],
         [InlineKeyboardButton("🍪𝗣𝗢𝗣🍪:", url="https://t.me/")]
     ])
-    await message.reply_photo(
+    await ydl.reply_photo(
         "https://telegra.ph/file/ed28706fff93c4a2956e5.jpg",
         reply_markup=joinButton,
         caption=youtube_ex

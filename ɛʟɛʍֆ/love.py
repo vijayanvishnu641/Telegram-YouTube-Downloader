@@ -1,4 +1,5 @@
 from pyrogram import Client, filters, StopPropagation
+from pyrogram.types import Message
 from pyrogram.types import (
     InlineKeyboardButton,
     InlineKeyboardMarkup,
@@ -10,12 +11,12 @@ from Trial import *
     &filters.private
     &filters.command("love", prefixes='/')
                    ) 
-async def love(_, message):
-  usrs = message.from_user.first_name
+async def love(_, ydl: Message):
+  usrs = ydl.from_user.first_name
   joinButton = InlineKeyboardMarkup([
         [InlineKeyboardButton("💋LOVE:", url="https://t.me/tronxli")],
     ])
-  Aww = f"""Hey <b>{message.from_user.first_name}</b>
+  Aww = f"""Hey <b>{ydl.from_user.first_name}</b>
 If you liked my project and want to be a GitHub contributor then:
 - 📧You may email me at **calitronvrtx@gmail.com**
 - 📬You can personal message me in Telegram **@calitronx**   
@@ -26,7 +27,7 @@ If you liked my project and want and just want to make me happy then you can:
     
 **<b>{usrs}**</b> Thanks a lot for using my bot🍰
 """      
-  await message.reply_photo(
+  await ydl.reply_photo(
         "https://telegra.ph/file/ed28706fff93c4a2956e5.jpg",
         reply_markup=joinButton,
         caption=Aww

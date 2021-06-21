@@ -1,6 +1,7 @@
 from datetime import datetime, timedelta
 from pyrogram import Client, filters
 from ռȶɨօռƈ.ytdlfunc import extractYt, create_buttons
+from pyrogram.types import Message
 import wget
 import os
 from PIL import Image
@@ -10,47 +11,45 @@ from pyrogram.types import (
     )
 
 @Client.on_message(filters.regex(ytregex))
-async def ytdl(_, message):
-    userLastDownloadTime = user_time.get(message.chat.id)
+async def ytdl(_, ydl: Message):
+    userLastDownloadTime = user_time.get(ydl.chat.id)
     try:
         if userLastDownloadTime > datetime.now():
             wait_time = round((userLastDownloadTime - datetime.now()).total_seconds() / 60, 2)
-            await message.reply_text(f"`Wait {wait_time} Minutes before next Request`")
+            await ydl.reply_text(f"`Wait {wait_time} Minutes before next Request`")
             return
     except:
         pass
 
-    url = message.text.strip()
-    await message.reply_chat_action("upload_video")
+    url = ydl.text.strip()
+    await ydl.reply_chat_action("upload_video")
     try:
         title, thumbnail_url, formats = extractYt(url)
 
         now = datetime.now()
-        user_time[message.chat.id] = now + \
+        user_time[ydl.chat.id] = now + \
                                      timedelta(minutes=wait_son)
 
     except Exception:
-        await message.reply_text("`Failed To Fetch Youtube Data...😔\nWait for {wait_time} or try other link")
+        await ydl.reply_text("`Failed To Fetch Youtube Data...😔\nWait for {wait_time} or try other link")
         return
     buttons = InlineKeyboardMarkup(list(create_buttons(formats)))
-    sentm = await message.reply_text("Select Audio or Video👇🏻")
+    sentm = await ydl.reply_text("Select Audio or Video👇🏻")
     try:
-        # Todo add webp image support in thumbnail by default not supported by pyrogram
-        # https://www.youtube.com/watch?v=lTTajzrSkCw
         img = wget.download(thumbnail_url)
         im = Image.open(img).convert("RGB")
-        output_directory = os.path.join(os.getcwd(), "downloads", str(message.chat.id))
+        output_directory = os.path.join(os.getcwd(), "downloads", str(ydl.chat.id))
         if not os.path.isdir(output_directory):
             os.makedirs(output_directory)
         thumb_image_path = f"{output_directory}.jpg"
         im.save(thumb_image_path,"jpeg")
-        await message.reply_photo(thumb_image_path, caption=title, reply_markup=buttons)
+        await ydl.reply_photo(thumb_image_path, caption=title, reply_markup=buttons)
         await sentm.delete()
     except Exception as e:
         print(e)
         try:
             thumbnail_url = "https://telegra.ph/file/ed28706fff93c4a2956e5.jpg"
-            await message.reply_photo(thumbnail_url, caption=title, reply_markup=buttons)
+            await ydl.reply_photo(thumbnail_url, caption=title, reply_markup=buttons)
         except Exception as e:
             await sentm.edit(
             f"<code>{e}</code> #Error")
