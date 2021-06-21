@@ -12,5 +12,5 @@ Client(
     api_id=APP_ID,
     api_hash=API_HASH,
     plugins=plugins,
-    workers=100
+    workers=20
 ).run()

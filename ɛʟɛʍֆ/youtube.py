@@ -1,13 +1,10 @@
 from datetime import datetime, timedelta
 from pyrogram import Client, filters, InlineKeyboardButton, InlineKeyboardMarkup
-from config import youtube_next_fetch
 from ռȶɨօռƈ.ytdlfunc import extractYt, create_buttons
 import wget
 import os
 from PIL import Image
 from Trial import *
-
-ytregex = r"^((?:https?:)?\/\/)?((?:www|m)\.)?((?:youtube\.com|youtu.be))(\/(?:[\w\-]+\?v=|embed\/|v\/)?)([\w\-]+)(\S+)?$"
 
 
 @Client.on_message(filters.regex(ytregex))

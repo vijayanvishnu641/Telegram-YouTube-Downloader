@@ -1,5 +1,6 @@
 from pyrogram import Client, filters, StopPropagation, InlineKeyboardButton, InlineKeyboardMarkup
 from Trial import *
+
 @Client.on_message(filters.command(["love"]), group=-2)
 async def love(_, message):
   usrs = message.from_user.first_name
