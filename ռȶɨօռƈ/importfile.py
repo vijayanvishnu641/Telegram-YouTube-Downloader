@@ -31,6 +31,7 @@ def buttonmap(item):
 
 def create_buttons(quailitylist):
     return map(buttonmap, quailitylist)
+
 def extractYt(fetchedlink):
     ydl = youtube_dl.YoutubeDL()
     with ydl:
@@ -41,8 +42,8 @@ def extractYt(fetchedlink):
                 qualityList.append(
                 {"format": format['format'], "filesize": format['filesize'], "gotfilekey": format['gotfilekey'],
                  "fetchedlink": fetchedlink})
-
         return r['title'], r['thumbnail'], qualityList
+    
 def downloadyt(url, fmid, custom_progress):
      ydl_opts = {
          'format': f"{fmid}+bestaudio",
@@ -52,6 +53,7 @@ def downloadyt(url, fmid, custom_progress):
      }
      with youtube_dl.YoutubeDL(ydl_opts) as ydl:
          ydl.download([url])
+         
 async def downloadvideocli(command_to_exec):
     process = await asyncio.create_subprocess_exec(
         *command_to_exec,
@@ -59,9 +61,9 @@ async def downloadvideocli(command_to_exec):
         stderr=asyncio.subprocess.PIPE, )
     stdout, stderr = await process.communicate()
     t_response = stdout.decode().strip()
-    filename = t_response.split("Merging formats into")[-1].split('"')[1]
-    
+    filename = t_response.split("Merging formats into")[-1].split('"')[1]  
     return filename
+
 async def downloadaudiocli(command_to_exec):
     process = await asyncio.create_subprocess_exec(
         *command_to_exec,
@@ -69,5 +71,4 @@ async def downloadaudiocli(command_to_exec):
         stderr=asyncio.subprocess.PIPE, )
     stdout, stderr = await process.communicate()
     t_response = stdout.decode().strip()
-
     return t_response.split("Destination")[-1].split("Deleting")[0].split(":")[-1].strip()
