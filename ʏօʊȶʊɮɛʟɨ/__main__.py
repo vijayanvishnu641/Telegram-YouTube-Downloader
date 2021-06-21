@@ -1,5 +1,5 @@
 from pyrogram import *
-from config import *
+from config import Kati
 
 TOKEN = Kati.TOKEN
 APP_ID = Kati.APP_ID
