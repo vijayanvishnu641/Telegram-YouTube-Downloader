@@ -20,7 +20,7 @@ async def catch_youtube_fmtid(
     _,
     buta):
     fetch_elems = buta.data
-    if fetch_elems.startswith("fetchedfile||"):
+    if fetch_elems.startswith("ytdata||"):
         fetchedlink = fetch_elems.split("||")[-1]
         format_id = fetch_elems.split("||")[-2]
         media_type = fetch_elems.split("||")[-3].strip()
@@ -131,7 +131,7 @@ async def catch_youtube_dldata(
         )
 
     if item_spawned:
-        loop.create_task(fetchedfile_throw(
+        loop.create_task(ytdata_throw(
         fetch,
         data_pod,
         item_spawned,
@@ -141,7 +141,7 @@ async def catch_youtube_dldata(
         "media not found"
         )
 
-async def fetchedfile_throw(
+async def ytdata_throw(
     fetch,
     data_pod,
     item_spawned,

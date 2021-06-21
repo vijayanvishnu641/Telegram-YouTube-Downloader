@@ -23,11 +23,11 @@ def buttonmap(item):
     if "audio" in quality:
         return [InlineKeyboardButton(
         f"{quality} 🎵 {tocheckuser(item['filesize'])}",
-        callback_data=f"fetchedfile||audio||{item['format_id']}||{item['fetchedlink']}")]
+        callback_data=f"ytdata||audio||{item['format_id']}||{item['fetchedlink']}")]
     else:
         return [InlineKeyboardButton(
         f"{quality} 📹 {tocheckuser(item['filesize'])}",
-        callback_data=f"fetchedfile||video||{item['format_id']}||{item['fetchedlink']}")]
+        callback_data=f"ytdata||video||{item['format_id']}||{item['fetchedlink']}")]
 
 def create_buttons(quailitylist):
     return map(buttonmap, quailitylist)
