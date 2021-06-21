@@ -18,7 +18,6 @@ async def love(_, message):
     await message.reply_photo(
         "https://telegra.ph/file/ed28706fff93c4a2956e5.jpg",
         reply_markup=joinButton,
-        caption=youtube_ex,
-        reply_markup=joinButton
+        caption=youtube_ex
         )
     raise StopPropagation
