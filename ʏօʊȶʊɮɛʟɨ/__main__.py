@@ -1,11 +1,6 @@
 from pyrogram import Client
 from Latte import *
 from Trial import *
-import logging
-logging.basicConfig(
-    format="%(levelname)s - %(message)s",
-    level=logging.INFO,
-)
 
 TOKEN = Kryogenesis.TOKEN
 APP_ID = Kryogenesis.APP_ID

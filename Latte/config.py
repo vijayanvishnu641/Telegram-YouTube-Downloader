@@ -1,4 +1,5 @@
 import os
+
 class Kryogenesis:
     # API_HASH = '4b7731b0a6d8e15bef82863887feb293'
     # APP_ID = 6372795
@@ -6,4 +7,7 @@ class Kryogenesis:
     TOKEN = os.environ.get("TOKEN")
     APP_ID = int(os.environ.get("API_ID"))
     API_HASH = os.environ.get("API_HASH")
+    YOUTUBE_KEY = os.environ.get("YOUTUBE_KEY")
 
+class Hypotherm(Kryogenesis):
+    LOGGER = True

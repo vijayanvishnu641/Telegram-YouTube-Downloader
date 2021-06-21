@@ -1,1 +1,1 @@
-worker: python3 -m ʏօʊȶʊɮɛʟɨ
+worker: python3 fetcher.py

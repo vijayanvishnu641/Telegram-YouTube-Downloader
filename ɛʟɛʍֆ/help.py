@@ -5,8 +5,9 @@ from Trial import *
 @Client.on_message(
     filters.group
     &filters.private
-    &filters.command("help", prefixes='/')
-                   ) 
+    &filters.command(
+    "help",
+    prefixes='/')) 
 async def help(
     _,
     ydl: Message

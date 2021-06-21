@@ -12,6 +12,7 @@ from ռȶɨօռƈ import *
 from PIL import Image
 from hachoir.metadata import extractMetadata
 from hachoir.parser import createParser
+from dlhunt.dlhunt import *
 
 @Client.on_callback_query()
 async def catch_youtube_fmtid(
@@ -101,8 +102,8 @@ async def catch_youtube_dldata(
         "-f", f"{gotfilekey}+bestaudio",
         "-o", filepath,
         "--hls-prefer-ffmpeg", fetchedlink]
-
     item_spawned = None
+    
     if fetch_elems.startswith("Get_Music"):
         filename = await downloadaudiocli(audio_command)
         item_spawned = InputMediaAudio(
