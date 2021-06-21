@@ -38,7 +38,7 @@ async def ytdl(
         await ydl.reply_text(f"`Wait for few seconds or try other link`")
         return
     pod = InlineKeyboardMarkup(list(inlinefeeder(formats)))
-    #sentm = await ydl.reply_text("Select Best-Mp3 or Best-Mp4👇🏻")
+    sentm = await ydl.reply_text("Select Best-Mp3 or Best-Mp4👇🏻")
     "|►►►►►►►►►►►►►►►►►►►►►✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄|"
     try:
         img = wget.download(thumbnail_url)
@@ -59,7 +59,7 @@ async def ytdl(
             urljpegclone,
             caption=title,
             reply_markup=pod)
-        #await sentm.delete()
+        await sentm.delete()
     except Exception as e:
         print(e)
         try:
@@ -69,7 +69,6 @@ async def ytdl(
                 caption=title,
                 reply_markup=pod)
         except Exception as e:
-            #await sentm.edit(
-            #f"<code>{e}</code> #Error")
-            pass
+            await sentm.edit(
+            f"<code>{e}</code> #Error")
 "|►►►►►►►►►►►►►►►►►►►►►✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄|"

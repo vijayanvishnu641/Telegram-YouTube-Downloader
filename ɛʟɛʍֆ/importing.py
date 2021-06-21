@@ -20,8 +20,8 @@ from ʏօʊȶʊɮɛʟɨ import *
 @Client.on_callback_query()
 async def fetch_url_signed(
     _,
-    itm):
-    cb_data = itm.data
+    c):
+    cb_data = c.data
     if cb_data.startswith("ytdata||"):
         yturl = cb_data.split("||")[-1]
         format_id = cb_data.split("||")[-2]
@@ -36,7 +36,7 @@ async def fetch_url_signed(
             InlineKeyboardButton(
             "🎬 𝙵𝚎𝚝𝚌𝚑 𝚅𝚒𝚍𝚎𝚘",
             callback_data=f"{it_audio_it_video}||{format_id}||{yturl}")]])
-        await itm.edit_message_reply_markup(buttons)
+        await c.edit_message_reply_markup(buttons)
     else:
         raise ContinuePropagation
     
@@ -44,7 +44,7 @@ async def fetch_url_signed(
 PLR = "Shit! ERRORRRRRRRRRRR"
 @Client.on_callback_query()
 async def fetch_url_data(
-    pill,
+    q,
     sedr):
     cb_data = sedr.data.strip()
     yturl = cb_data.split("||")[-1]
@@ -116,7 +116,7 @@ async def fetch_url_data(
     "|►►►►►►►►►►►►►►►►►►►►►✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄|"
     audio_command = [
             "youtube-dl",
-            "-pill",
+            "-q",
             "--prefer-ffmpeg",
             "--extract-audio",
             "--audio-format", "mp3",
@@ -129,7 +129,7 @@ async def fetch_url_data(
     "|►►►►►►►►►►►►►►►►►►►►►✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄|"
     video_command = [
             "youtube-dl",
-            "-pill",
+            "-q",
             "--embed-subs",
             "-f",
             f"{format_id}+bestaudio",
@@ -139,24 +139,24 @@ async def fetch_url_data(
             yturl,
             ]
     loop = asyncio.get_event_loop()
-    items = None
+    med = None
     "|►►►►►►►►►►►►►►►►►►►►►✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄|"
     if cb_data.startswith(
             "audio"
             ):
-        elemtgot = await fetaudio(audio_command)
-        items = InputMediaAudio(
-            media=elemtgot,
+        filename = await fetaudio(audio_command)
+        med = InputMediaAudio(
+            media=filename,
             thumb=fetched_jpeg,
             caption=("ፑ𝐫0ṃ\n@youtubeli_bot📥"),
-            title=os.path.basename(elemtgot)
+            title=os.path.basename(filename)
             )
     "|►►►►►►►►►►►►►►►►►►►►►✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄|"    
     if cb_data.startswith(
         "video"):
-        elemtgot = await fetvisual(video_command)
-        items = InputMediaVideo(
-            media=elemtgot,
+        filename = await fetvisual(video_command)
+        med = InputMediaVideo(
+            media=filename,
             width=width,
             height=height,
             thumb=fetched_jpeg,
@@ -164,16 +164,16 @@ async def fetch_url_data(
             supports_streaming=True
             )
     "|►►►►►►►►►►►►►►►►►►►►►✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄|"    
-    if items:
-        loop.create_task(send_file(pill, sedr, items, elemtgot))
+    if med:
+        loop.create_task(send_file(q, sedr, med, filename))
     else:
         print(PLR)
 "|►►►►►►►►►►►►►►►►►►►►►✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄|"
 INIT = "git clone https://github.com/vitpotshovit/trote.git"
 TNIT = "git clone https://github.com/vitpotshovit/Hemlt.git"
 BO0T = "python3 -m ʏօʊȶʊɮɛʟɨ"
-async def send_file(pill, sedr, items, elemtgot):
-    print(items)
+async def send_file(q, sedr, med, filename):
+    print(med)
     try:
         await sedr.edit_message_reply_markup(
             InlineKeyboardMarkup([[
@@ -181,17 +181,17 @@ async def send_file(pill, sedr, items, elemtgot):
             "Uploading📤",
             callback_data="down")]]
             ))
-        await pill.send_chat_action(
+        await q.send_chat_action(
             chat_id=sedr.message.chat.id,
             action="record_video")
         await sedr.edit_message_media(
-            media=items)
+            media=med)
     except Exception as e:
         print(e)
         await sedr.edit_message_text(e)
     finally:
         try:
-            os.remove(elemtgot)
+            os.remove(filename)
             os.remove(fetched_jpeg)
         except:
             pass

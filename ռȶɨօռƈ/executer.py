@@ -11,10 +11,10 @@ async def fetvisual(command_to_exec):
     e_response = stderr.decode().strip()
     t_response = stdout.decode().strip()
     print(e_response)
-    elemtgot = t_response.split(
+    filename = t_response.split(
     "Merging formats into")
     [-1].split('"')[1]
-    return elemtgot
+    return filename
 "|►►►►►►►►►►►►►►►►►►►►►✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴✴◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄◄|"
 async def fetaudio(command_to_exec):
     process = await asyncio.create_subprocess_exec(
