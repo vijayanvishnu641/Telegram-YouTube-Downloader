@@ -165,18 +165,7 @@ async def catch_youtube_dldata(c, q):
             thumb=thumb_image_path,
             caption=("ፑ𝐫0ṃ\n@YoutubeDownloadVrtx_Bot📥"),
         )
-        
 
-    #if cb_data.startswith("docvideo"):
-     #   filename = await downloadvideocli(video_command)
-      #  dur = round(duration(filename))
-       # med = InputMediaDocument(
-        #    media=filename,
-       #     thumb=thumb_image_path,
-      #      caption=("ፑ𝐫0ṃ\n@YoutubeDownloadVrtx_Bot📥"),
-    #    )
-    
-    
     if med:
         loop.create_task(send_file(c, q, med, filename))
     else:

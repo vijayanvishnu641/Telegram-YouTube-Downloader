@@ -40,7 +40,7 @@ async def start(client, message):
     
     # Thought of somemore features but i am lazy lul
     
-    helptxt = f"""/help:[📥](https://telegra.ph/file/62e3a57990afe2d6da431.jpg)\n
+    helptxt = f"""/help:[📥](https://telegra.ph/file/ed28706fff93c4a2956e5.jpg)\n
                  .˜”*°•**InChat**•°*”˜.
 Copy any Valid Youtube link and paste inside the bot and follow the prompts.
                  .˜”*°•**InGroups**•°*”˜.
