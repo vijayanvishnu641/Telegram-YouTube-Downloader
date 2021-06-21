@@ -1,6 +1,7 @@
-from pyrogram import Client, Filters
+from pyrogram import Client, filters
+from Trial import *
 
-@Client.on_message(Filters.command(["help"]))
+@Client.on_message(filters.command(["help"]))
 async def help(_, message):
     helptxt = f"""
 .📍**𝐈𝐌𝐏𝐎𝐑𝐓𝐀𝐍𝐓**📍.

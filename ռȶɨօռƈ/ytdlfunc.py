@@ -1,9 +1,9 @@
 from __future__ import unicode_literals
-from pyrogram import Client, Filters, StopPropagation, InlineKeyboardButton, InlineKeyboardMarkup
+from pyrogram import InlineKeyboardButton
 import youtube_dl
 from humaner.hooli import humanbytes
 import asyncio
-
+from Trial import *
 
 def buttonmap(item):
     quality = item['format']
@@ -23,7 +23,6 @@ def extractYt(yturl):
         qualityList = []
         r = ydl.extract_info(yturl, download=False)
         for format in r['formats']:
-            # Filter dash video(without audio)
             if not "dash" in str(format['format']).lower():
                 qualityList.append(
                 {"format": format['format'], "filesize": format['filesize'], "format_id": format['format_id'],

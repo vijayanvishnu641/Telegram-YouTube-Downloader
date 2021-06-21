@@ -1,12 +1,8 @@
 import subprocess as sp
 import json
-
+from Trial import *
 
 def probe(ytdl_path):
-    
-    #Give a json from ffprobe command line
-    #@ytdl_path : The full path of the video file, string.
-    
     if type(ytdl_path) != str:
         raise Exception('Give ffprobe a full file path of the file')
 

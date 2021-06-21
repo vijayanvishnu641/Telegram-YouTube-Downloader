@@ -1,6 +1,6 @@
 import asyncio
 import os
-
+from Trial import *
 from pyrogram import (Client,
                       InlineKeyboardButton,
                       InlineKeyboardMarkup,
