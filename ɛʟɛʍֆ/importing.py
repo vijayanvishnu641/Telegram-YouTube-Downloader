@@ -25,7 +25,7 @@ async def catch_youtube_fmtid(
         format_id = fetch_elems.split("||")[-2]
         media_type = fetch_elems.split("||")[-3].strip()
         print(media_type)
-        if media_type == 'Get_Music':
+        if media_type == 'audio':
             pod = InlineKeyboardMarkup(
                 [[InlineKeyboardButton(
                 "Best-Mp3",
