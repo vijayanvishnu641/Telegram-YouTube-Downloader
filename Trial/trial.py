@@ -3,7 +3,7 @@ FIXING = 2
 wait_son = 0
 users ={}
 user_time = {}
-DOWNLOAD_LOCATION = "./Downloads"
+
 ytregex = r"^((?:https?:)?\/\/)?((?:www|m)\.)?((?:youtube\.com|youtu.be))(\/(?:[\w\-]+\?v=|embed\/|v\/)?)([\w\-]+)(\S+)?$"
 plugins = dict(
     root="ɛʟɛʍֆ",
