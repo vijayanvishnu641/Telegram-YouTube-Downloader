@@ -30,7 +30,7 @@
       },
       "buildpacks": [
         {
-          "url": "https://github.com/calitronx/heroku-buildpack-ffmpeg-latest.git"
+          "url": "https://github.com/calitronx/Heroku-Buildpack-ffmpeg.git"
         },
         {
           "url": "heroku/python"
