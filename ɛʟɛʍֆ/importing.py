@@ -64,7 +64,7 @@ async def catch_youtube_dldata(c, q):
             img.resize((
             512,
             height))
-        img.save(thumb_image_path, "jpg")
+        img.save(thumb_image_path, "JPEG")
     if not cb_data.startswith((
             "video",
             "audio",)):
