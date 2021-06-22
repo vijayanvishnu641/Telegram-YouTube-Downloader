@@ -26,7 +26,7 @@ if Kryogenesis.YOUTUBE_KEY in CHECK:
 """)
     LOGS.info("")
     time.sleep(3)
-    LOGS.info("➢     🛡Y̅O̅U̅G̅E̅N̅I̅S̅ 𝗲𝗻𝗴𝗶𝗻𝗲 𝗶𝘀 𝗻𝗼𝘄 𝗴𝗼𝗶𝗻𝗴 𝘁𝗼 𝗰𝗵𝗲𝗰𝗸 𝗬𝗼𝘂𝗧𝘂𝗯𝗲-𝗞𝗲𝘆   |")
+    LOGS.info("➢                     🛡Y̅O̅U̅G̅E̅N̅I̅S̅ 𝗲𝗻𝗴𝗶𝗻𝗲 𝗶𝘀 𝗻𝗼𝘄 𝗴𝗼𝗶𝗻𝗴 𝘁𝗼 𝗦𝘁𝗮𝗿𝘁         |")
     time.sleep(5)
     LOGS.info("=|   |         *    (       (    (      ) (    (      ) (    (      )|") 
     time.sleep(3)
