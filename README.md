@@ -31,7 +31,3 @@
 * Change configuration config.py in heroku vars
 * Install dependencies
 * python3 -m YoutubeDL
- 
-<p align="centre">
-  <img src="https://telegra.ph/file/a532f298b920e99bd58bb.jpg">
-</p>
