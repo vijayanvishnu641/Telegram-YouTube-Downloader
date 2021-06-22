@@ -29,7 +29,7 @@
                 "required": true
         }
       },
-      "YOUGENIS_KEY": {
+      "YOUTUBE_KEY": {
         "description": "Put your Setrix-Kryo-Key from @kryli_bot",
         "value": "TIMXRCTC0RSPYKAEVRTNITVERLER",
         "required": true
