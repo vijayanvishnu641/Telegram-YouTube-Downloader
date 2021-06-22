@@ -1,16 +1,13 @@
-'🍟==============================『🍗 ʏօʊȶʊɮɛʟɨ 🍰』==============================🍟'
 from pyrogram import Client, filters, StopPropagation
 from pyrogram.types import (
     InlineKeyboardButton,
     InlineKeyboardMarkup,
     Message
     )
-from IDLER.Trial import *
 '🍟==============================『🍗 ʏօʊȶʊɮɛʟɨ 🍰』==============================🍟'
-B0Ot = "python engine.py"
-@Client.on_message(filters.private
+@Client.on_message(filters.group
         &filters.command(
-        "start",
+        "ytstart",
         prefixes='/')) 
 async def start(
     _,
