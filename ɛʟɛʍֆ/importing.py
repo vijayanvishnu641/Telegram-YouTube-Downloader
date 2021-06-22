@@ -40,11 +40,8 @@ async def catch_youtube_dldata(c, q):
     cb_data = q.data.strip()
     yturl = cb_data.split("||")[-1]
     format_id = cb_data.split("||")[-2]
-    # thumb_image_path = "/app/downloads" + \
-    #     "/" + str(q.message.chat.id) + ".jpg"
     thumb_image_path = DOWNLOAD_LOCATION + \
-        str(q.message.chat.id) + ".jpg"
-    print(thumb_image_path)
+        "/" + str(q.message.chat.id) + ".jpg"
     if os.path.exists(thumb_image_path):
         width = 0
         height = 0
@@ -64,8 +61,6 @@ async def catch_youtube_dldata(c, q):
         img = Image.open(thumb_image_path)
         if cb_data.startswith(
             ("audio",
-             "docaudio",
-             "docvideo"
             )):
             img.resize((512, height))
         else:
@@ -74,12 +69,11 @@ async def catch_youtube_dldata(c, q):
     if not cb_data.startswith(
         ("video",
          "audio",
-         "docaudio"
         )):
         print("no data found")
         raise ContinuePropagation
     filext = "%(title)s.%(ext)s"
-    userdir = os.path.join(os.getcwd(), "downloads", str(q.message.chat.id))
+    userdir = os.path.join(os.getcwd(), DOWNLOAD_LOCATION, str(q.message.chat.id))
     if not os.path.isdir(userdir):
         os.makedirs(userdir)
     await q.edit_message_reply_markup(
@@ -92,7 +86,8 @@ async def catch_youtube_dldata(c, q):
         "-c",
         "--prefer-ffmpeg",
         "--extract-audio",
-        "--audio-format", "mp3",
+        "--audio-format",
+        "mp3",
         "--audio-quality",
         format_id,
         "-o",
@@ -104,15 +99,18 @@ async def catch_youtube_dldata(c, q):
         "youtube-dl",
         "-c",
         "--embed-subs",
-        "-f", f"{format_id}+bestaudio",
-        "-o", filepath,
+        "-f",
+        f"{format_id}+bestaudio",
+        "-o",
+        filepath,
         "--hls-prefer-ffmpeg",
         yturl,
         ]
     loop = asyncio.get_event_loop()
     med = None
     if cb_data.startswith("audio"):
-        filename = await downloadaudiocli(audio_command)
+        filename = await downloadaudiocli(
+            audio_command)
         med = InputMediaAudio(
             media=filename,
             thumb=thumb_image_path,
@@ -121,7 +119,8 @@ async def catch_youtube_dldata(c, q):
         )
 
     if cb_data.startswith("video"):
-        filename = await downloadvideocli(video_command)
+        filename = await downloadvideocli(
+            video_command)
         med = InputMediaVideo(
             media=filename,
             width=width,

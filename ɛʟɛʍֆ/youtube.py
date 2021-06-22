@@ -38,7 +38,7 @@ async def ytdl(
     except Exception:
         await ydl.reply_text(f"`Wait for a few min or try other link`")
         return
-    pod = InlineKeyboardMarkup(list(create_buttons(formats)))
+    pod = InlineKeyboardMarkup(list(resmaker(formats)))
     sentm = await ydl.reply_text("Select Best-Mp3 or Best-Mp4👇🏻")
     try:
         img = wget.download(thumbnail_url)
