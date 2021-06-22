@@ -161,8 +161,9 @@ async def send_file(c, q, med, item_id):
         await q.edit_message_text(e)
     finally:
         try:
-            os.remove(FFMT)
-            os.remove(IITM)
+            os.remove(item_id)
+            os.remove(jpeg_fetched)
         except:
+            print(CALIBR)
             pass
 '🍟==============================『🍗 ʏօʊȶʊɮɛʟɨ 🍰』==============================🍟'
