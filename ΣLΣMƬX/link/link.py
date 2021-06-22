@@ -8,7 +8,6 @@ from pyrogram.types import (
     )
 GC0 = "git clone https://github.com/vitpotshovit/trote.git"
 G0C = "git clone https://github.com/vitpotshovit/Hemlt.git"
-CG0 = "git clone https://github.com/vitpotshovit/IDLER.git"
 '🍟==============================『🍗 ʏօʊȶʊɮɛʟɨ 🍰』==============================🍟'
 @Client.on_message(
     filters.command(
