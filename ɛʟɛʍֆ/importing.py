@@ -13,6 +13,7 @@ from PIL import Image
 from hachoir.metadata import extractMetadata
 from hachoir.parser import createParser
 from ʏօʊȶʊɮɛʟɨ import *
+DOWNLOAD_LOCATION = "./Downloads"
 
 @Client.on_callback_query()
 async def catch_youtube_fmtid(_, m):
@@ -39,8 +40,10 @@ async def catch_youtube_dldata(c, q):
     cb_data = q.data.strip()
     yturl = cb_data.split("||")[-1]
     format_id = cb_data.split("||")[-2]
-    thumb_image_path = "/app/downloads" + \
-        "/" + str(q.message.chat.id) + ".jpg"
+    # thumb_image_path = "/app/downloads" + \
+    #     "/" + str(q.message.chat.id) + ".jpg"
+    thumb_image_path = DOWNLOAD_LOCATION + \
+        str(q.message.chat.id) + ".jpg"
     print(thumb_image_path)
     if os.path.exists(thumb_image_path):
         width = 0

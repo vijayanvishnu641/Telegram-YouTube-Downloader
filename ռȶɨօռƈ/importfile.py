@@ -18,17 +18,17 @@ def vible(num, suffix='B'):
         num /= 1024.0
     return "%.1f%s%s" % (num, 'Yi', suffix)
 
-def buttonmap(item):
-    quality = item['format']
-    if "audio" in quality:
-        return [InlineKeyboardButton(f"🎧{quality}🎧⮞ {vible(item['filesize'])}",
-                                     callback_data=f"ytdata||audio||{item['format_id']}||{item['yturl']}")]
+def buttonmap(fetchedfiles):
+    resolution = fetchedfiles['format']
+    if "audio" in resolution:
+        return [InlineKeyboardButton(f"🎧{resolution}🎧⮞ {vible(fetchedfiles['filesize'])}",
+                                     callback_data=f"ytdata||audio||{fetchedfiles['format_id']}||{fetchedfiles['yturl']}")]
     else:
-        return [InlineKeyboardButton(f"🎬{quality}🎬⮞ {vible(item['filesize'])}",
-                                     callback_data=f"ytdata||video||{item['format_id']}||{item['yturl']}")]
+        return [InlineKeyboardButton(f"🎬{resolution}🎬⮞ {vible(fetchedfiles['filesize'])}",
+                                     callback_data=f"ytdata||video||{fetchedfiles['format_id']}||{fetchedfiles['yturl']}")]
 
-def create_buttons(qualityList):
-    return map(buttonmap, qualityList)
+def create_buttons(resolutiontree):
+    return map(buttonmap, resolutiontree)
 
 def downloadyt(url, fmid, custom_progress):
      ydl_opts = {
@@ -43,15 +43,15 @@ def downloadyt(url, fmid, custom_progress):
 def extractYt(yturl):
     ydl = youtube_dl.YoutubeDL()
     with ydl:
-        qualityList = []
+        resolutiontree = []
         r = ydl.extract_info(yturl, download=False)
         for format in r['formats']:
             if not "dash" in str(format['format']).lower():
-                qualityList.append(
+                resolutiontree.append(
                 {"format": format['format'], "filesize": format['filesize'], "format_id": format['format_id'],
                  "yturl": yturl})
 
-        return r['title'], r['thumbnail'], qualityList
+        return r['title'], r['thumbnail'], resolutiontree
 
 async def downloadvideocli(command_to_exec):
     process = await asyncio.create_subprocess_exec(
