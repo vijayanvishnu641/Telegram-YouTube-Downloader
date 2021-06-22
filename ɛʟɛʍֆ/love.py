@@ -18,6 +18,8 @@ async def love(
         [InlineKeyboardButton("💋LOVE:", url="https://t.me/tronxli")],
     ])
   Aww = f"""Hey <b>{ydl.from_user.first_name}</b>
+🍟==========『🍗 ʏօʊȶʊɮɛʟɨ 🍰』==========🍟
+
 If you liked my project and want to be a GitHub contributor then:
 - 📧You may email me at **calitronvrtx@gmail.com**
 - 📬You can personal message me in Telegram **@calitronx**   
@@ -27,6 +29,8 @@ If you liked my project and want and just want to make me happy then you can:
 - 🌹share my bot and make me happy 🌹
     
 **<b>{usrs}**</b> Thanks a lot for using my bot🍰
+
+🍟==========『🍗 ʏօʊȶʊɮɛʟɨ 🍰』==========🍟
 """      
   await ydl.reply_photo(
         youliurl,

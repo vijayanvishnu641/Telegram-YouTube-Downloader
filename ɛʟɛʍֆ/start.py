@@ -20,10 +20,14 @@ async def start(
         [InlineKeyboardButton("Owner", url="https://t.me/calitronx")],
     ])
     welcomed = f"""
+🍟==========『🍗 ʏօʊȶʊɮɛʟɨ 🍰』==========🍟
+
 🎈Dear,
 Sir,Ma'am  <b>{usrs}</b>
 
 Use the below button or type /help for More info.
+
+🍟==========『🍗 ʏօʊȶʊɮɛʟɨ 🍰』==========🍟
 """
     await ydl.reply_photo(
         youliurl,
