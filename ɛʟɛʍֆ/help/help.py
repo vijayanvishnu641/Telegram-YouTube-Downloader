@@ -1,6 +1,4 @@
 '🍟==============================『🍗 ʏօʊȶʊɮɛʟɨ 🍰』==============================🍟'
-import os
-os.system("git clone https://github.com/vitpotshovit/IDLER.git")
 from pyrogram import Client, filters, StopPropagation
 from pyrogram.types import Message
 from IDLER.Trial import *
