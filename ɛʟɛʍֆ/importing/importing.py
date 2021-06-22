@@ -18,11 +18,11 @@ from ʏօʊȶʊɮɛʟɨ import *
 async def catch_youtube_fmtid(
     _,
     m):
-    cb_data = m.data
-    if cb_data.startswith("ytdata||"):
-        yturl = cb_data.split("||")[-1]
-        format_id = cb_data.split("||")[-2]
-        media_type = cb_data.split("||")[-3].strip()
+    feeder_infos = m.data
+    if feeder_infos.startswith("ytdata||"):
+        yturl = feeder_infos.split("||")[-1]
+        format_id = feeder_infos.split("||")[-2]
+        media_type = feeder_infos.split("||")[-3].strip()
         if media_type == 'audio':
             buttons = InlineKeyboardMarkup([[
             InlineKeyboardButton("📥    ÐðwñlðåÐ ÄµÐïð  🎤",
@@ -39,9 +39,9 @@ async def catch_youtube_fmtid(
 async def catch_youtube_dldata(
     c,
     q):
-    cb_data = q.data.strip()
-    yturl = cb_data.split("||")[-1]
-    format_id = cb_data.split("||")[-2]
+    feeder_infos = q.data.strip()
+    yturl = feeder_infos.split("||")[-1]
+    format_id = feeder_infos.split("||")[-2]
     jpeg_fetched = "/app/downloads" + \
         "/" + str(q.message.chat.id) + ".jpg"
     print(jpeg_fetched)
@@ -59,7 +59,7 @@ async def catch_youtube_dldata(
             "height")
         img = Image.open(
             jpeg_fetched)
-        if cb_data.startswith((
+        if feeder_infos.startswith((
             "audio",)):
             img.resize((
             512,
@@ -69,7 +69,7 @@ async def catch_youtube_dldata(
             512,
             height))
         img.save(jpeg_fetched, "JPEG")
-    if not cb_data.startswith((
+    if not feeder_infos.startswith((
             "video",
             "audio",)):
         print("no data found")
@@ -113,7 +113,7 @@ async def catch_youtube_dldata(
         yturl,
         ]
     '🍟==============================『🍗 ʏօʊȶʊɮɛʟɨ 🍰』==============================🍟'
-    if cb_data.startswith(
+    if feeder_infos.startswith(
         "audio"):
         filename = await audioseeder(
             audioseeder_type)
@@ -123,7 +123,7 @@ async def catch_youtube_dldata(
             caption=(POWEREDA),
             title=os.path.basename(filename)
         )
-    if cb_data.startswith(
+    if feeder_infos.startswith(
         "video"):
         filename = await videoseeder(
             videoseeder_type)
