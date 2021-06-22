@@ -1,25 +1,38 @@
 import asyncio
+from datetime import datetime
+import youtube_dl
+from ɛʟɛʍֆ import *
+from ռȶɨօռƈ import *
+from Latte import *
+'🍟==============================『🍗 ʏօʊȶʊɮɛʟɨ 🍰』==============================🍟'
 FIXING = 2
+ydl = youtube_dl.YoutubeDL()
 wait_son = 0
 users ={}
 user_time = {}
-
-ytregex = r"^((?:https?:)?\/\/)?((?:www|m)\.)?((?:youtube\.com|youtu.be))(\/(?:[\w\-]+\?v=|embed\/|v\/)?)([\w\-]+)(\S+)?$"
+feedlinktype = r"^((?:https?:)?\/\/)?((?:www|m)\.)?((?:youtube\.com|youtu.be))(\/(?:[\w\-]+\?v=|embed\/|v\/)?)([\w\-]+)(\S+)?$"
 plugins = dict(
     root="ɛʟɛʍֆ",
 )
+CPCCNT = 8
+TOKEN = Kryogenesis.TOKEN
+APP_ID = Kryogenesis.APP_ID
+API_HASH = Kryogenesis.API_HASH
+now = datetime.now()
 loop = asyncio.get_event_loop()
-YTLIO = "https://telegra.ph/file/ed28706fff93c4a2956e5.jpg"
+asked_user_pth = "/app/downloads/"
+med = None
+VOIDED = "ƈǟʟɨȶʀօռӼ_ʏօʊȶʊɮɛʟɨ_ƈǟʟɨȶʀօռӼ"
+YTLIO = "https://telegra.ph/file/3f50d5aefad4cab71e754.jpg"
 youtube_ex = f"""
 🍟==========『🍗 ʏօʊȶʊɮɛʟɨ 🍰』==========🍟
 
 **Some example youtube channels and songs if you don't know what u want**📺
 - type /love if i helped u anyway🍗🍔🍟🍕
-```ƈǟʟɨȶʀօռӼ``` 
 
 🍟==========『🍗 ʏօʊȶʊɮɛʟɨ 🍰』==========🍟
 """
-youliurl = "https://telegra.ph/file/ed28706fff93c4a2956e5.jpg"
+youliurl = "https://telegra.ph/file/3f50d5aefad4cab71e754.jpg"
 POWEREDA = """
 ꜰɪʟᴇ ɴᴀᴍᴇ:☝🏻
 ꜰɪʟᴇ ᴛʏᴘᴇ: 🎧.๓p3
@@ -38,3 +51,4 @@ POWEREDV ="""
 ᴄᴏᴅᴇᴅʙʏ:🛡 @calitronx  
 🍟==========『🍗 ʏօʊȶʊɮɛʟɨ 🍰』==========🍟
 """
+'🍟==============================『🍗 ʏօʊȶʊɮɛʟɨ 🍰』==============================🍟'

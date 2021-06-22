@@ -1,11 +1,12 @@
+'🍟==============================『🍗 ʏօʊȶʊɮɛʟɨ 🍰』==============================🍟'
 from pyrogram import Client, filters, StopPropagation
-from pyrogram.types import Message
-from Trial import *
 from pyrogram.types import (
     InlineKeyboardButton,
     InlineKeyboardMarkup,
+    Message
     )
-
+from Trial import *
+'🍟==============================『🍗 ʏօʊȶʊɮɛʟɨ 🍰』==============================🍟'
 @Client.on_message(
     filters.command("start", prefixes='/')
                    ) 
@@ -15,10 +16,20 @@ async def start(
     ):
     usrs = ydl.from_user.first_name
     joinButton = InlineKeyboardMarkup([
-        [InlineKeyboardButton("Group:", url="https://t.me/tronxli")],
-        [InlineKeyboardButton("Bot update:", url="https://t.me/calitrox")],
-        [InlineKeyboardButton("Owner", url="https://t.me/calitronx")],
-    ])
+        [InlineKeyboardButton(
+            "🍺 Grðµþ:",
+            url="https://t.me/tronxli")],
+        [InlineKeyboardButton(
+            "📡 ßð†§ Hµß:",
+             url="https://t.me/calitrox")],
+        [InlineKeyboardButton(
+            "🛡 ÇðÐêß¥",
+            url="https://t.me/calitronx")],
+        [InlineKeyboardButton(
+            "🍷 Gï†hµß",
+            url="https://github.com/calitronx?tab=repositories")],
+            ])
+    '🍟==============================『🍗 ʏօʊȶʊɮɛʟɨ 🍰』==============================🍟'
     welcomed = f"""
 🍟==========『🍗 ʏօʊȶʊɮɛʟɨ 🍰』==========🍟
 
@@ -29,8 +40,10 @@ Use the below button or type /help for More info.
 
 🍟==========『🍗 ʏօʊȶʊɮɛʟɨ 🍰』==========🍟
 """
+    '🍟==============================『🍗 ʏօʊȶʊɮɛʟɨ 🍰』==============================🍟'
     await ydl.reply_photo(
         youliurl,
         caption=welcomed,
         reply_markup=joinButton)
     raise StopPropagation
+'🍟==============================『🍗 ʏօʊȶʊɮɛʟɨ 🍰』==============================🍟'

@@ -1,3 +1,4 @@
+🍟==============================『🍗 ʏօʊȶʊɮɛʟɨ 🍰』==============================🍟
 ##  Tҽʅҽɠɾαɱ-YσυTυႦҽ-Dσɯɳʅσαԃҽɾ 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/calitronx/Telegram-YouTube-Downloader.git/tree/Vrtx)
 <img align="centre" src="https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg" alt="calitronx"/>
@@ -6,7 +7,7 @@
 <img aligh="centre" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"/>
 
 <p align="centre">
-  <img src="https://telegra.ph/file/ed28706fff93c4a2956e5.jpg">
+  <img src="https://telegra.ph/file/3f50d5aefad4cab71e754.jpg">
 </p>
 * Commands YouTube for Audio & Video and sends it to telegram after receiving valid URL [Do not forwarded any just copy and paste the link]
 * Reach me on Telegram (https://t.me/vrtxytbot)
@@ -31,3 +32,4 @@
 * Change configuration config.py in heroku vars
 * Install dependencies
 * python3 -m YoutubeDL
+🍟==============================『🍗 ʏօʊȶʊɮɛʟɨ 🍰』==============================🍟

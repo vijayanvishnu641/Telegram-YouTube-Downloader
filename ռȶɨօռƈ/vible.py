@@ -1,10 +1,20 @@
-def vible(num, suffix='B'):
-    if num is None:
-        num = 0
+'🍟==============================『🍗 ʏօʊȶʊɮɛʟɨ 🍰』==============================🍟'
+def vible(
+    amount,
+    last='B'):
+    if amount is None:
+        amount = 0
     else:
-        num = int(num)
+        amount = int(amount)
     for unit in ['', 'K', 'M', 'G', 'T', 'P', 'E', 'Z']:
-        if abs(num) < 1024.0:
-            return "%3.1f%s%s" % (num, unit, suffix)
-        num /= 1024.0
-    return "%.1f%s%s" % (num, 'Yi', suffix)
+        if abs(amount) < 1024.0:
+            return "%3.1f%s%s" % (
+                amount,
+                unit,
+                last)
+        amount /= 1024.0
+    return "%.1f%s%s" % (
+        amount,
+        'Yi',
+        last)
+'🍟==============================『🍗 ʏօʊȶʊɮɛʟɨ 🍰』==============================🍟'

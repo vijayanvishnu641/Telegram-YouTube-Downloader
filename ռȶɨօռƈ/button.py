@@ -1,7 +1,9 @@
+'🍟==============================『🍗 ʏօʊȶʊɮɛʟɨ 🍰』==============================🍟'
 from pyrogram.types import (
     InlineKeyboardButton,
     )
 from .vible import *
+'🍟==============================『🍗 ʏօʊȶʊɮɛʟɨ 🍰』==============================🍟'
 def resshaper(fetchedfiles):
     resolution = fetchedfiles['format']
     if "audio" in resolution:
@@ -14,3 +16,4 @@ def resshaper(fetchedfiles):
 
 def resmaker(resolutiontree):
     return map(resshaper, resolutiontree)
+'🍟==============================『🍗 ʏօʊȶʊɮɛʟɨ 🍰』==============================🍟'
