@@ -8,7 +8,7 @@ from pyrogram.types import (
     InputMediaVideo,
     InputMediaAudio,
     )
-from ռȶɨօռƈ import *
+from ПKΛ匚 import *
 from PIL import Image
 from hachoir.metadata import extractMetadata
 from hachoir.parser import createParser

@@ -1,7 +1,7 @@
 '🍟==============================『🍗 ʏօʊȶʊɮɛʟɨ 🍰』==============================🍟'
 from datetime import datetime, timedelta
 from pyrogram import Client, filters
-from ռȶɨօռƈ import *
+from ПKΛ匚 import *
 from pyrogram.types import Message
 import wget
 import os

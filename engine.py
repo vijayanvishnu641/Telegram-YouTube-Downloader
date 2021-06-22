@@ -3,16 +3,16 @@ import sys
 import os
 from ʏօʊȶʊɮɛʟɨ import LOGS
 import shutil
-from ռȶɨօռƈ import *
+from ПKΛ匚 import *
 from IDLER.Trial import *
 from ʏօʊȶʊɮɛʟɨ import *
 from Latte import *
-from ɛʟɛʍֆ import *
+from ΣLΣMƬX import *
 from Hemlt.yt import VERI
 from trote.trote.auther_filler.Drip import Li
 CHECK =  VERI
 "===================================================|👉🏼   ©⋊Σ̶∞̶™  |==================================================="
-if Kryogenesis.YOUTUBE_KEY in CHECK:
+if Kryogenesis.YOUGENIS_KEY in CHECK:
     LOGS.info("")
     LOGS.info("")
     LOGS.info("""
