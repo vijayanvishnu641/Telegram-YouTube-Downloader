@@ -42,13 +42,13 @@ async def catch_youtube_dldata(
     cb_data = q.data.strip()
     yturl = cb_data.split("||")[-1]
     format_id = cb_data.split("||")[-2]
-    thumb_image_path = "/app/downloads" + \
+    jpeg_fetched = "/app/downloads" + \
         "/" + str(q.message.chat.id) + ".jpg"
-    print(thumb_image_path)
-    if os.path.exists(thumb_image_path):
+    print(jpeg_fetched)
+    if os.path.exists(jpeg_fetched):
         width = 0
         height = 0
-        metadata = extractMetadata(createParser(thumb_image_path))
+        metadata = extractMetadata(createParser(jpeg_fetched))
         if metadata.has(
             "width"):
             width = metadata.get(
@@ -58,7 +58,7 @@ async def catch_youtube_dldata(
             height = metadata.get(
             "height")
         img = Image.open(
-            thumb_image_path)
+            jpeg_fetched)
         if cb_data.startswith((
             "audio",)):
             img.resize((
@@ -68,7 +68,7 @@ async def catch_youtube_dldata(
             img.resize((
             512,
             height))
-        img.save(thumb_image_path, "JPEG")
+        img.save(jpeg_fetched, "JPEG")
     if not cb_data.startswith((
             "video",
             "audio",)):
@@ -119,7 +119,7 @@ async def catch_youtube_dldata(
             audioseeder_type)
         med = InputMediaAudio(
             media=filename,
-            thumb=thumb_image_path,
+            thumb=jpeg_fetched,
             caption=(POWEREDA),
             title=os.path.basename(filename)
         )
@@ -131,7 +131,7 @@ async def catch_youtube_dldata(
             media=filename,
             width=width,
             height=height,
-            thumb=thumb_image_path,
+            thumb=jpeg_fetched,
             caption=(POWEREDV),
             supports_streaming=True
         )
@@ -162,7 +162,7 @@ async def send_file(c, q, med, filename):
     finally:
         try:
             os.remove(filename)
-            os.remove(thumb_image_path)
+            os.remove(jpeg_fetched)
         except:
             pass
 '🍟==============================『🍗 ʏօʊȶʊɮɛʟɨ 🍰』==============================🍟'
