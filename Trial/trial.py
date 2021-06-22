@@ -1,8 +1,6 @@
 import asyncio
 from datetime import datetime
 import youtube_dl
-from ɛʟɛʍֆ import *
-from ռȶɨօռƈ import *
 from Latte import *
 '🍟==============================『🍗 ʏօʊȶʊɮɛʟɨ 🍰』==============================🍟'
 FIXING = 2
@@ -10,7 +8,7 @@ ydl = youtube_dl.YoutubeDL()
 wait_son = 0
 users ={}
 user_time = {}
-feedlinktype = r"^((?:https?:)?\/\/)?((?:www|m)\.)?((?:youtube\.com|youtu.be))(\/(?:[\w\-]+\?v=|embed\/|v\/)?)([\w\-]+)(\S+)?$"
+ytregex = r"^((?:https?:)?\/\/)?((?:www|m)\.)?((?:youtube\.com|youtu.be))(\/(?:[\w\-]+\?v=|embed\/|v\/)?)([\w\-]+)(\S+)?$"
 plugins = dict(
     root="ɛʟɛʍֆ",
 )

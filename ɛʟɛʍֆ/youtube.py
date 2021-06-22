@@ -14,7 +14,7 @@ from pyrogram.types import (
 '🍟==============================『🍗 ʏօʊȶʊɮɛʟɨ 🍰』==============================🍟'
 @Client.on_message(
     filters.regex(
-        feedlinktype))
+        ytregex))
 async def ytdl(
     _,
     ydl: Message
