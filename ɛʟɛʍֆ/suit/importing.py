@@ -74,9 +74,7 @@ async def catch_youtube_dldata(
         print("no data found")
         raise ContinuePropagation
     filext = "%(title)s.%(ext)s"
-    userdir = os.path.join(os.getcwd(),
-                           "downloads",
-                           str(quot.message.chat.id))
+    userdir = os.path.join(os.getcwd(),"downloads",str(quot.message.chat.id))
     if not os.path.isdir(userdir):
         os.makedirs(userdir)
     await quot.edit_message_reply_markup(
