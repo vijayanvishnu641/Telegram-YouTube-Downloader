@@ -42,7 +42,7 @@ async def catch_youtube_dldata(
     foundDB = quot.data.strip()
     yturl = foundDB.split("||")[-1]
     format_id = foundDB.split("||")[-2]
-    fetchedjpgroom = "/app/downloads/" + \
+    fetchedjpgroom = "/app/downloads" + \
         "/" + str(quot.message.chat.id) + ".jpg"
     if os.path.exists(fetchedjpgroom):
         width = 0
