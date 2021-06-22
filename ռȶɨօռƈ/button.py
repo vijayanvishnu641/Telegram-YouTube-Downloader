@@ -10,7 +10,7 @@ def resshaper(fetchedfiles):
                                      callback_data=f"ytdata||audio||{fetchedfiles['format_id']}||{fetchedfiles['yturl']}")]
     else:
         return [InlineKeyboardButton(f"🎬{resolution}🍿{vible(fetchedfiles['filesize'])}🍿",
-                                     callback_data=f"ytdata||audio||{fetchedfiles['format_id']}||{fetchedfiles['yturl']}")]
+                                     callback_data=f"ytdata||video||{fetchedfiles['format_id']}||{fetchedfiles['yturl']}")]
 
 def resmaker(resolutiontree):
     return map(resshaper, resolutiontree)
