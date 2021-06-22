@@ -18,7 +18,7 @@ APP_ID = Kryogenesis.APP_ID
 API_HASH = Kryogenesis.API_HASH
 now = datetime.now()
 loop = asyncio.get_event_loop()
-asked_user_pth = "/app/downloads/"
+
 med = None
 VOIDED = "ƈǟʟɨȶʀօռӼ_ʏօʊȶʊɮɛʟɨ_ƈǟʟɨȶʀօռӼ"
 YTLIO = "https://telegra.ph/file/3f50d5aefad4cab71e754.jpg"
