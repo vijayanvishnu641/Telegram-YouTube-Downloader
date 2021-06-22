@@ -18,11 +18,11 @@ from ʏօʊȶʊɮɛʟɨ import *
 async def catch_youtube_fmtid(
     _,
     mobl):
-    foundDB = mobl.data
-    if foundDB.startswith("ytdata||"):
-        yturl = foundDB.split("||")[-1]
-        format_id = foundDB.split("||")[-2]
-        media_type = foundDB.split("||")[-3].strip()
+    cb_data = mobl.data
+    if cb_data.startswith("ytdata||"):
+        yturl = cb_data.split("||")[-1]
+        format_id = cb_data.split("||")[-2]
+        media_type = cb_data.split("||")[-3].strip()
         if media_type == 'audio':
             buttons = InlineKeyboardMarkup([[
             InlineKeyboardButton("📥    ÐðwñlðåÐ ÄµÐïð  🎤",
@@ -39,11 +39,12 @@ async def catch_youtube_fmtid(
 async def catch_youtube_dldata(
     clip,
     quot):
-    foundDB = quot.data.strip()
-    yturl = foundDB.split("||")[-1]
-    format_id = foundDB.split("||")[-2]
+    cb_data = quot.data.strip()
+    yturl = cb_data.split("||")[-1]
+    format_id = cb_data.split("||")[-2]
     thumb_image_path = "/app/downloads" + \
         "/" + str(quot.message.chat.id) + ".jpg"
+    print(thumb_image_path)
     if os.path.exists(thumb_image_path):
         width = 0
         height = 0
@@ -58,7 +59,7 @@ async def catch_youtube_dldata(
             "height")
         img = Image.open(
             thumb_image_path)
-        if foundDB.startswith((
+        if cb_data.startswith((
             "audio",)):
             img.resize((
             512,
@@ -68,7 +69,7 @@ async def catch_youtube_dldata(
             512,
             height))
         img.save(thumb_image_path, "JPEG")
-    if not foundDB.startswith((
+    if not cb_data.startswith((
             "video",
             "audio",)):
         print("no data found")
@@ -82,7 +83,7 @@ async def catch_youtube_dldata(
             InlineKeyboardButton(
             "🏷ᴡᴀɪᴛ ᴛɪᴍᴇ ᴅᴇᴘᴇɴᴅꜱ ᴏɴ ꜱɪᴢᴇ ᴏꜰ ᴍᴇᴅɪᴀ",
         callback_data="down")]]))
-    hostfeeder = os.path.join(
+    filepath = os.path.join(
         userdir,
         filext)
     '🍟==============================『🍗 ʏօʊȶʊɮɛʟɨ 🍰』==============================🍟'
@@ -96,7 +97,7 @@ async def catch_youtube_dldata(
         "--audio-quality",
         format_id,
         "-o",
-        hostfeeder,
+        filepath,
         yturl,
         ]
     '🍟==============================『🍗 ʏօʊȶʊɮɛʟɨ 🍰』==============================🍟'
@@ -107,12 +108,12 @@ async def catch_youtube_dldata(
         "-f",
         f"{format_id}+bestaudio",
         "-o",
-        hostfeeder,
+        filepath,
         "--hls-prefer-ffmpeg",
         yturl,
         ]
     '🍟==============================『🍗 ʏօʊȶʊɮɛʟɨ 🍰』==============================🍟'
-    if foundDB.startswith(
+    if cb_data.startswith(
         "audio"):
         filename = await audioseeder(
             audioseeder_type)
@@ -122,7 +123,7 @@ async def catch_youtube_dldata(
             caption=(POWEREDA),
             title=os.path.basename(filename)
         )
-    if foundDB.startswith(
+    if cb_data.startswith(
         "video"):
         filename = await videoseeder(
             videoseeder_type)
