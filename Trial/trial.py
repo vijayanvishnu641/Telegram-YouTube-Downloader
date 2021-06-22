@@ -21,26 +21,20 @@ youtube_ex = f"""
 """
 youliurl = "https://telegra.ph/file/ed28706fff93c4a2956e5.jpg"
 POWEREDA = """
-🍟==========『🍗 ʏօʊȶʊɮɛʟɨ 🍰』==========🍟
-
-            ꜰɪʟᴇ ɴᴀᴍᴇ:☝🏻
-            ꜰɪʟᴇ ᴛʏᴘᴇ: 🎧.๓p3
-            ʙʀᴏᴜɢʜᴛ ʙʏ:🍺 @youtubeli_bot
-            ɢʀᴏᴜᴘ:🔥 @tronxli
-            ᴄʜᴀɴɴᴇʟ:✨@calitrox
-            ᴄᴏᴅᴇᴅʙʏ:🛡 @calitronx
-            
+    ꜰɪʟᴇ ɴᴀᴍᴇ:☝🏻
+    ꜰɪʟᴇ ᴛʏᴘᴇ: 🎧.๓p3
+    ʙʀᴏᴜɢʜᴛ ʙʏ:🍺 @youtubeli_bot
+    ɢʀᴏᴜᴘ:🔥 @tronxli
+    ᴄʜᴀɴɴᴇʟ:✨@calitrox
+    ᴄᴏᴅᴇᴅʙʏ:🛡 @calitronx  
 🍟==========『🍗 ʏօʊȶʊɮɛʟɨ 🍰』==========🍟
 """
 POWEREDV ="""
-🍟==========『🍗 ʏօʊȶʊɮɛʟɨ 🍰』==========🍟
-
-            ꜰɪʟᴇ ɴᴀᴍᴇ:☝🏻
-            ꜰɪʟᴇ ᴛʏᴘᴇ: 🎬.๓p4
-            ʙʀᴏᴜɢʜᴛ ʙʏ:🍺 @youtubeli_bot
-            ɢʀᴏᴜᴘ:🔥 @tronxli
-            ᴄʜᴀɴɴᴇʟ:✨@calitrox
-            ᴄᴏᴅᴇᴅʙʏ:🛡 @calitronx
-            
+    ꜰɪʟᴇ ɴᴀᴍᴇ:☝🏻
+    ꜰɪʟᴇ ᴛʏᴘᴇ: 🎬.๓p4
+    ʙʀᴏᴜɢʜᴛ ʙʏ:🍺 @youtubeli_bot
+    ɢʀᴏᴜᴘ:🔥 @tronxli
+    ᴄʜᴀɴɴᴇʟ:✨@calitrox
+    ᴄᴏᴅᴇᴅʙʏ:🛡 @calitronx  
 🍟==========『🍗 ʏօʊȶʊɮɛʟɨ 🍰』==========🍟
 """
