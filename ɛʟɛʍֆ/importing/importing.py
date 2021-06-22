@@ -17,8 +17,8 @@ from ʏօʊȶʊɮɛʟɨ import *
 @Client.on_callback_query()
 async def catch_youtube_fmtid(
     _,
-    mobl):
-    cb_data = mobl.data
+    m):
+    cb_data = m.data
     if cb_data.startswith("ytdata||"):
         yturl = cb_data.split("||")[-1]
         format_id = cb_data.split("||")[-2]
@@ -31,19 +31,19 @@ async def catch_youtube_fmtid(
             buttons = InlineKeyboardMarkup([[
             InlineKeyboardButton("📥    ÐðwñlðåÐ VïÐêð  🎨",
                                  callback_data=f"{media_type}||{format_id}||{yturl}")]])
-        await mobl.edit_message_reply_markup(buttons)
+        await m.edit_message_reply_markup(buttons)
     else:
         raise ContinuePropagation
 '🍟==============================『🍗 ʏօʊȶʊɮɛʟɨ 🍰』==============================🍟'
 @Client.on_callback_query()
 async def catch_youtube_dldata(
-    clip,
-    quot):
-    cb_data = quot.data.strip()
+    c,
+    q):
+    cb_data = q.data.strip()
     yturl = cb_data.split("||")[-1]
     format_id = cb_data.split("||")[-2]
     thumb_image_path = "/app/downloads" + \
-        "/" + str(quot.message.chat.id) + ".jpg"
+        "/" + str(q.message.chat.id) + ".jpg"
     print(thumb_image_path)
     if os.path.exists(thumb_image_path):
         width = 0
@@ -75,10 +75,10 @@ async def catch_youtube_dldata(
         print("no data found")
         raise ContinuePropagation
     filext = "%(title)s.%(ext)s"
-    userdir = os.path.join(os.getcwd(), "downloads", str(quot.message.chat.id))
+    userdir = os.path.join(os.getcwd(), "downloads", str(q.message.chat.id))
     if not os.path.isdir(userdir):
         os.makedirs(userdir)
-    await quot.edit_message_reply_markup(
+    await q.edit_message_reply_markup(
         InlineKeyboardMarkup([[
             InlineKeyboardButton(
             "🏷ᴡᴀɪᴛ ᴛɪᴍᴇ ᴅᴇᴘᴇɴᴅꜱ ᴏɴ ꜱɪᴢᴇ ᴏꜰ ᴍᴇᴅɪᴀ",
@@ -89,7 +89,7 @@ async def catch_youtube_dldata(
     '🍟==============================『🍗 ʏօʊȶʊɮɛʟɨ 🍰』==============================🍟'
     audioseeder_type = [
         "youtube-dl",
-        "-clip",
+        "-c",
         "--prefer-ffmpeg",
         "--extract-audio",
         "--audio-format",
@@ -103,7 +103,7 @@ async def catch_youtube_dldata(
     '🍟==============================『🍗 ʏօʊȶʊɮɛʟɨ 🍰』==============================🍟'
     videoseeder_type = [
         "youtube-dl",
-        "-clip",
+        "-c",
         "--embed-subs",
         "-f",
         f"{format_id}+bestaudio",
@@ -138,27 +138,27 @@ async def catch_youtube_dldata(
     if med:
         loop.create_task(
             send_file(
-                clip,
-                quot,
+                c,
+                q,
                 med,
                 filename))
     else:
         print("media not found")
 '🍟==============================『🍗 ʏօʊȶʊɮɛʟɨ 🍰』==============================🍟'
-async def send_file(clip, quot, med, filename):
+async def send_file(c, q, med, filename):
     print(med)
     try:
-        await quot.edit_message_reply_markup(
+        await q.edit_message_reply_markup(
                  InlineKeyboardMarkup([[
                 InlineKeyboardButton(
                 "Uploading📤",
                 callback_data="down")
                 ]]))
-        await clip.send_chat_action(chat_id=quot.message.chat.id, action="record_video")
-        await quot.edit_message_media(media=med)
+        await c.send_chat_action(chat_id=q.message.chat.id, action="record_video")
+        await q.edit_message_media(media=med)
     except Exception as e:
         print(e)
-        await quot.edit_message_text(e)
+        await q.edit_message_text(e)
     finally:
         try:
             os.remove(filename)
