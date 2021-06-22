@@ -28,7 +28,7 @@
                 "description": "Your telegram bot token.Get from Botfather",
                 "required": true
         },
-        "YOUTUBE_KEY": {
+        "YOUGENIS_KEY": {
                 "description": "Put your Setrix-Kryo-Key from @kryli_bot",
                 "required": true
       },
