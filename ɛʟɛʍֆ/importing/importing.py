@@ -42,7 +42,7 @@ async def catch_youtube_dldata(
     feeder_infos = q.data.strip()
     yturl = feeder_infos.split("||")[-1]
     format_id = feeder_infos.split("||")[-2]
-    jpeg_fetched = "/app/downloads" + \
+    jpeg_fetched = DLDR + \
         "/" + str(q.message.chat.id) + ".jpg"
     print(jpeg_fetched)
     if os.path.exists(jpeg_fetched):
@@ -75,7 +75,7 @@ async def catch_youtube_dldata(
         print("no data found")
         raise ContinuePropagation
     filext = "%(title)s.%(ext)s"
-    userdir = os.path.join(os.getcwd(), "downloads", str(q.message.chat.id))
+    userdir = os.path.join(os.getcwd(), DLD, str(q.message.chat.id))
     if not os.path.isdir(userdir):
         os.makedirs(userdir)
     await q.edit_message_reply_markup(
@@ -115,20 +115,20 @@ async def catch_youtube_dldata(
     '🍟==============================『🍗 ʏօʊȶʊɮɛʟɨ 🍰』==============================🍟'
     if feeder_infos.startswith(
         "audio"):
-        filename = await audioseeder(
+        item_id = await audioseeder(
             audioseeder_type)
         med = InputMediaAudio(
-            media=filename,
+            media=item_id,
             thumb=jpeg_fetched,
             caption=(POWEREDA),
-            title=os.path.basename(filename)
+            title=os.path.basename(item_id)
         )
     if feeder_infos.startswith(
         "video"):
-        filename = await videoseeder(
+        item_id = await videoseeder(
             videoseeder_type)
         med = InputMediaVideo(
-            media=filename,
+            media=item_id,
             width=width,
             height=height,
             thumb=jpeg_fetched,
@@ -141,11 +141,11 @@ async def catch_youtube_dldata(
                 c,
                 q,
                 med,
-                filename))
+                item_id))
     else:
         print("media not found")
 '🍟==============================『🍗 ʏօʊȶʊɮɛʟɨ 🍰』==============================🍟'
-async def send_file(c, q, med, filename):
+async def send_file(c, q, med, item_id):
     print(med)
     try:
         await q.edit_message_reply_markup(
@@ -161,8 +161,8 @@ async def send_file(c, q, med, filename):
         await q.edit_message_text(e)
     finally:
         try:
-            os.remove(filename)
-            os.remove(jpeg_fetched)
+            os.remove(FFMT)
+            os.remove(IITM)
         except:
             pass
 '🍟==============================『🍗 ʏօʊȶʊɮɛʟɨ 🍰』==============================🍟'
