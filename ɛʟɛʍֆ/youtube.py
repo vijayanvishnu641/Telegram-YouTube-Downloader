@@ -7,7 +7,7 @@ import wget
 import os
 from ʏօʊȶʊɮɛʟɨ import *
 from PIL import Image
-from Trial import *
+from IDLER.Trial import *
 from pyrogram.types import (
     InlineKeyboardMarkup,
     )

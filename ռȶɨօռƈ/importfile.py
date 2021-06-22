@@ -1,7 +1,7 @@
 '🍟==============================『🍗 ʏօʊȶʊɮɛʟɨ 🍰』==============================🍟'
 from __future__ import unicode_literals
 import asyncio
-from Trial import *
+from IDLER.Trial import *
 '🍟==============================『🍗 ʏօʊȶʊɮɛʟɨ 🍰』==============================🍟'
 async def videoseeder(command_to_exec):
     process = await asyncio.create_subprocess_exec(

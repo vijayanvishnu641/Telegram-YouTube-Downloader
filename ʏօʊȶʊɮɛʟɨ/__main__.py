@@ -3,7 +3,7 @@ from pyrogram import (
     Client as mapple,
     idle
     )
-from Trial import *
+from IDLER.Trial import *
 '🍟==============================『🍗 ʏօʊȶʊɮɛʟɨ 🍰』==============================🍟'
 ƈǟʟɨȶʀօռӼ = mapple(
     session_name=VOIDED,

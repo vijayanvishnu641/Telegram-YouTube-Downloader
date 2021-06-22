@@ -5,8 +5,9 @@ from pyrogram.types import (
     InlineKeyboardMarkup,
     Message
     )
-from Trial import *
+from IDLER.Trial import *
 '🍟==============================『🍗 ʏօʊȶʊɮɛʟɨ 🍰』==============================🍟'
+B0Ot = "python engine.py"
 @Client.on_message(
     filters.command("start", prefixes='/')
                    ) 

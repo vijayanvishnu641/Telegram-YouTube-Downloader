@@ -4,7 +4,7 @@ import os
 from ʏօʊȶʊɮɛʟɨ import LOGS
 import shutil
 from ռȶɨօռƈ import *
-from Trial import *
+from IDLER.Trial import *
 from ʏօʊȶʊɮɛʟɨ import *
 from Latte import *
 from ɛʟɛʍֆ import *

@@ -5,7 +5,7 @@ from pyrogram.types import (
     InlineKeyboardButton,
     InlineKeyboardMarkup,
     )
-from Trial import *
+from IDLER.Trial import *
 '🍟==============================『🍗 ʏօʊȶʊɮɛʟɨ 🍰』==============================🍟'
 @Client.on_message(
     filters.command(

@@ -1,6 +1,6 @@
 '🍟==============================『🍗 ʏօʊȶʊɮɛʟɨ 🍰』==============================🍟'
 import os
-from Trial import *
+from IDLER.Trial import *
 from pyrogram import Client, ContinuePropagation
 from pyrogram.types import (
     InlineKeyboardButton,

