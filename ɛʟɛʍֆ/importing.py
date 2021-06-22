@@ -24,14 +24,12 @@ async def catch_youtube_fmtid(_, m):
         print(media_type)
         if media_type == 'audio':
             buttons = InlineKeyboardMarkup([[
-            InlineKeyboardButton(
-            "Best-Mp3",
-            callback_data=f"{media_type}||{format_id}||{yturl}"),]])
+            InlineKeyboardButton("Best-Mp3",
+                                 callback_data=f"{media_type}||{format_id}||{yturl}"),]])
         else:
             buttons = InlineKeyboardMarkup([[
-            InlineKeyboardButton(
-            "Best-Mp4",
-            callback_data=f"{media_type}||{format_id}||{yturl}")]])
+            InlineKeyboardButton("Best-Mp4",
+                                 callback_data=f"{media_type}||{format_id}||{yturl}")]])
         await m.edit_message_reply_markup(buttons)
     else:
         raise ContinuePropagation

@@ -21,21 +21,11 @@ def vible(num, suffix='B'):
 def buttonmap(item):
     quality = item['format']
     if "audio" in quality:
-        return [InlineKeyboardButton(
-                f"""
-                🎧{quality}🎧⮞ {vible(item['filesize'])}
-                """,
-                callback_data=f"""
-                ytdata||audio||{item['format_id']}||{item['yturl']}
-                """)]
+        return [InlineKeyboardButton(f"🎧{quality}🎧⮞ {vible(item['filesize'])}",
+                                     callback_data=f"ytdata||audio||{item['format_id']}||{item['yturl']}")]
     else:
-        return [InlineKeyboardButton(
-                f"""
-                🎬{quality}🎬⮞ {vible(item['filesize'])}
-                """,
-                callback_data=f"""
-                ytdata||video||{item['format_id']}||{item['yturl']}
-                """)]
+        return [InlineKeyboardButton(f"🎬{quality}🎬⮞ {vible(item['filesize'])}",
+                                     callback_data=f"ytdata||video||{item['format_id']}||{item['yturl']}")]
 
 def create_buttons(qualityList):
     return map(buttonmap, qualityList)
