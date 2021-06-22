@@ -1,4 +1,4 @@
-🍟==============================『🍗 ʏօʊȶʊɮɛʟɨ 🍰』==============================🍟
+🍟===================『🍗 ʏօʊȶʊɮɛʟɨ 🍰』===================🍟
 ##  Tҽʅҽɠɾαɱ-YσυTυႦҽ-Dσɯɳʅσαԃҽɾ 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/calitronx/Telegram-YouTube-Downloader.git/tree/Vrtx)
 <img align="centre" src="https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg" alt="calitronx"/>
@@ -22,14 +22,5 @@
 
 ## Prerequisite: 
 * ffmpeg - [ https://github.com/calitronx/heroku-buildpack-ffmpeg-latest.git ]
-  
-    
-## Dependencies:
-* pip3 install -r requirements.txt
 
-
-## Initialise
-* Change configuration config.py in heroku vars
-* Install dependencies
-* python3 -m YoutubeDL
-🍟==============================『🍗 ʏօʊȶʊɮɛʟɨ 🍰』==============================🍟
+🍟===================『🍗 ʏօʊȶʊɮɛʟɨ 🍰』===================🍟
