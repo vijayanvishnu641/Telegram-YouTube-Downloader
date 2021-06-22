@@ -42,12 +42,12 @@ async def catch_youtube_dldata(
     foundDB = quot.data.strip()
     yturl = foundDB.split("||")[-1]
     format_id = foundDB.split("||")[-2]
-    fetchedjpgroom = "/app/downloads" + \
+    thumb_image_path = "/app/downloads" + \
         "/" + str(quot.message.chat.id) + ".jpg"
-    if os.path.exists(fetchedjpgroom):
+    if os.path.exists(thumb_image_path):
         width = 0
         height = 0
-        metadata = extractMetadata(createParser(fetchedjpgroom))
+        metadata = extractMetadata(createParser(thumb_image_path))
         if metadata.has(
             "width"):
             width = metadata.get(
@@ -57,7 +57,7 @@ async def catch_youtube_dldata(
             height = metadata.get(
             "height")
         img = Image.open(
-            fetchedjpgroom)
+            thumb_image_path)
         if foundDB.startswith((
             "audio",)):
             img.resize((
@@ -67,14 +67,14 @@ async def catch_youtube_dldata(
             img.resize((
             512,
             height))
-        img.save(fetchedjpgroom, "JPEG")
+        img.save(thumb_image_path, "JPEG")
     if not foundDB.startswith((
             "video",
             "audio",)):
         print("no data found")
         raise ContinuePropagation
     filext = "%(title)s.%(ext)s"
-    userdir = os.path.join(os.getcwd(),"downloads",str(quot.message.chat.id))
+    userdir = os.path.join(os.getcwd(), "downloads", str(quot.message.chat.id))
     if not os.path.isdir(userdir):
         os.makedirs(userdir)
     await quot.edit_message_reply_markup(
@@ -118,7 +118,7 @@ async def catch_youtube_dldata(
             audioseeder_type)
         med = InputMediaAudio(
             media=filename,
-            thumb=fetchedjpgroom,
+            thumb=thumb_image_path,
             caption=(POWEREDA),
             title=os.path.basename(filename)
         )
@@ -130,7 +130,7 @@ async def catch_youtube_dldata(
             media=filename,
             width=width,
             height=height,
-            thumb=fetchedjpgroom,
+            thumb=thumb_image_path,
             caption=(POWEREDV),
             supports_streaming=True
         )
@@ -161,7 +161,7 @@ async def send_file(clip, quot, med, filename):
     finally:
         try:
             os.remove(filename)
-            os.remove(fetchedjpgroom)
+            os.remove(thumb_image_path)
         except:
             pass
 '🍟==============================『🍗 ʏօʊȶʊɮɛʟɨ 🍰』==============================🍟'
