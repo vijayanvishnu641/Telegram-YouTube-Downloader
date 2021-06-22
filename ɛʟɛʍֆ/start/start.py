@@ -8,10 +8,11 @@ from pyrogram.types import (
 from IDLER.Trial import *
 '🍟==============================『🍗 ʏօʊȶʊɮɛʟɨ 🍰』==============================🍟'
 B0Ot = "python engine.py"
-@Client.on_message(filters.private
-        &filters.command(
-        "start",
-        prefixes='/')) 
+@Client.on_message(
+    filters.private
+    &filters.command(
+    "start",
+    prefixes='/')) 
 async def start(
     _,
     ydl: Message
