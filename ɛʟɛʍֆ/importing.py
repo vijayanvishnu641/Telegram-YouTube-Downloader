@@ -14,7 +14,6 @@ from hachoir.metadata import extractMetadata
 from hachoir.parser import createParser
 from ʏօʊȶʊɮɛʟɨ import *
 
-
 @Client.on_callback_query()
 async def catch_youtube_fmtid(_, m):
     cb_data = m.data
@@ -25,11 +24,11 @@ async def catch_youtube_fmtid(_, m):
         print(media_type)
         if media_type == 'audio':
             buttons = InlineKeyboardMarkup([[
-            InlineKeyboardButton("Best-Mp3",
+            InlineKeyboardButton("📥    ÐðwñlðåÐ ÄµÐïð  🎤",
                                  callback_data=f"{media_type}||{format_id}||{yturl}"),]])
         else:
             buttons = InlineKeyboardMarkup([[
-            InlineKeyboardButton("Best-Mp4",
+            InlineKeyboardButton("📥    ÐðwñlðåÐ VïÐêð  🎨",
                                  callback_data=f"{media_type}||{format_id}||{yturl}")]])
         await m.edit_message_reply_markup(buttons)
     else:
@@ -40,45 +39,45 @@ async def catch_youtube_dldata(c, q):
     cb_data = q.data.strip()
     yturl = cb_data.split("||")[-1]
     format_id = cb_data.split("||")[-2]
-    thumb_image_path = DOWNLOAD_LOCATION + \
+    thumb_image_path = "/app/downloads/" + \
         "/" + str(q.message.chat.id) + ".jpg"
     if os.path.exists(thumb_image_path):
         width = 0
         height = 0
         metadata = extractMetadata(createParser(thumb_image_path))
         if metadata.has(
-            "width"
-            ):
+            "width"):
             width = metadata.get(
-            "width"
-            )
+            "width")
         if metadata.has(
-            "height"
-            ):
+            "height"):
             height = metadata.get(
-            "height"
-            )
-        img = Image.open(thumb_image_path)
-        if cb_data.startswith(
-            ("audio",
-            )):
-            img.resize((512, height))
+            "height")
+        img = Image.open(
+            thumb_image_path)
+        if cb_data.startswith((
+            "audio",)):
+            img.resize((
+            90,
+            height))
         else:
-            img.resize((320, height))
-        img.save(thumb_image_path, "JPEG")
-    if not cb_data.startswith(
-        ("video",
-         "audio",
-        )):
+            img.resize((
+            512,
+            height))
+        img.save(thumb_image_path, "jpg")
+    if not cb_data.startswith((
+            "video",
+            "audio",)):
         print("no data found")
         raise ContinuePropagation
     filext = "%(title)s.%(ext)s"
-    userdir = os.path.join(os.getcwd(), DOWNLOAD_LOCATION, str(q.message.chat.id))
+    userdir = os.path.join(os.getcwd(), "downloads", str(q.message.chat.id))
     if not os.path.isdir(userdir):
         os.makedirs(userdir)
     await q.edit_message_reply_markup(
-        InlineKeyboardMarkup([[InlineKeyboardButton(
-        "PLEASE WAIT",
+        InlineKeyboardMarkup([[
+            InlineKeyboardButton(
+            "🏷ᴡᴀɪᴛ ᴛɪᴍᴇ ᴅᴇᴘᴇɴᴅꜱ ᴏɴ ꜱɪᴢᴇ ᴏꜰ ᴍᴇᴅɪᴀ",
         callback_data="down")]]))
     filepath = os.path.join(userdir, filext)
     audio_command = [
