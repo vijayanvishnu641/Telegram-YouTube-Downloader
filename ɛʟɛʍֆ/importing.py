@@ -114,7 +114,6 @@ async def catch_youtube_dldata(c, q):
             media=filename,
             thumb=thumb_image_path,
             caption=(POWEREDA),
-            supports_streaming=True,
             title=os.path.basename(filename)
         )
 
