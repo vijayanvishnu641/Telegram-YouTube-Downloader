@@ -19,11 +19,11 @@ def vible(num, suffix='B'):
     return "%.1f%s%s" % (num, 'Yi', suffix)
 
 def buttonmap(item):
-    resolution = item['format']
-    if "audio" in resolution:
+    quality = item['format']
+    if "audio" in quality:
         return [InlineKeyboardButton(
                 f"""
-                🎧{resolution}🎧⮞ {vible(item['filesize'])}
+                🎧{quality}🎧⮞ {vible(item['filesize'])}
                 """,
                 callback_data=f"""
                 ytdata||audio||{item['format_id']}||{item['yturl']}
@@ -31,16 +31,14 @@ def buttonmap(item):
     else:
         return [InlineKeyboardButton(
                 f"""
-                🎬{resolution}🎬⮞ {vible(item['filesize'])}
+                🎬{quality}🎬⮞ {vible(item['filesize'])}
                 """,
                 callback_data=f"""
                 ytdata||video||{item['format_id']}||{item['yturl']}
                 """)]
 
-def create_buttons(resolutionlist):
-    return map(
-    buttonmap,
-    resolutionlist)
+def create_buttons(qualityList):
+    return map(buttonmap, qualityList)
 
 def downloadyt(url, fmid, custom_progress):
      ydl_opts = {
