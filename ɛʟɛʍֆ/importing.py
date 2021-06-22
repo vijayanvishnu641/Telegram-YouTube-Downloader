@@ -13,7 +13,7 @@ from PIL import Image
 from hachoir.metadata import extractMetadata
 from hachoir.parser import createParser
 from ʏօʊȶʊɮɛʟɨ import *
-DOWNLOAD_LOCATION = "./Downloads"
+
 
 @Client.on_callback_query()
 async def catch_youtube_fmtid(_, m):
