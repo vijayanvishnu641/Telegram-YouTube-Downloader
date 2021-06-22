@@ -44,7 +44,6 @@ async def catch_youtube_dldata(
     format_id = feeder_infos.split("||")[-2]
     jpeg_fetched = DLDR + \
         "/" + str(q.message.chat.id) + ".jpg"
-    print(jpeg_fetched)
     if os.path.exists(jpeg_fetched):
         width = 0
         height = 0
@@ -72,7 +71,6 @@ async def catch_youtube_dldata(
     if not feeder_infos.startswith((
             "video",
             "audio",)):
-        print("no data found")
         raise ContinuePropagation
     filext = "%(title)s.%(ext)s"
     userdir = os.path.join(os.getcwd(), DLD, str(q.message.chat.id))
