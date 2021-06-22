@@ -3,9 +3,8 @@
     "description": "Download any Youtube Audio/Video at full quality",
     "repository": "https://github.com/calitronx/Telegram-YouTube-Downloader.git",
     "logo": "https://telegra.ph/file/ed28706fff93c4a2956e5.jpg",
-    "success_url": "https://t.me/vrtxmusic",
-    "website": "https://t,me/vrtxmusic", 
-  
+    "success_url": "https://t.me/tronxli",
+    "website": "https://github.com/calitronx/Telegram-YouTube-Downloader.git", 
     "keywords": [
       "Youtube",
       "YoutubeDownloader",
@@ -28,11 +27,10 @@
                 "description": "Your telegram bot token.Get from Botfather",
                 "required": true
         }
-      },
-      "YOUTUBE_KEY": {
-        "description": "Put your Setrix-Kryo-Key from @kryli_bot",
-        "value": "TIMXRCTC0RSPYKAEVRTNITVERLER",
-        "required": true
+        },
+        "YOUTUBE_KEY": {
+                "description": "Put your Setrix-Kryo-Key from @kryli_bot",
+                "required": true
       },
       "buildpacks": [
         {
