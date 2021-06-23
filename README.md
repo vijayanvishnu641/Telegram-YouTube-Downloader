@@ -10,10 +10,10 @@
 -𝙲𝚑𝚘𝚘𝚜𝚎 𝚝𝚑𝚎 𝚚𝚞𝚊𝚕𝚒𝚝𝚢 𝚊𝚗𝚍 𝚐𝚎𝚝 𝚢𝚘𝚞𝚛 𝚍𝚎𝚜𝚒𝚛𝚎𝚍 𝚊𝚞𝚍𝚒𝚘/𝚟𝚒𝚍𝚎𝚘 𝚒𝚗 𝚏𝚎𝚠 𝚖𝚘𝚖𝚎𝚗𝚝𝚜.
 
 ## MΣΣƬ US ӨЯ CΉΣCK ӨƬΉΣЯ BӨƬS
-- [![Generic badge](https://img.shields.io/badge/@𝗰𝗮𝗹𝘁𝗶𝗻𝗳𝗼_𝗯𝗼𝘁-group-white.svg)](https://t.me/caltinfo_bot) 
+- [![Generic badge](https://img.shields.io/badge/@𝗰𝗮𝗹𝘁𝗶𝗻𝗳𝗼_𝗯𝗼𝘁-group-orange.svg)](https://t.me/caltinfo_bot) 
 𝘊𝘩𝘢𝘯𝘯𝘦𝘭 𝘧𝘰𝘳 𝘶𝘱𝘥𝘢𝘵𝘦𝘴
 
-- [![Generic badge](https://img.shields.io/badge/@𝗞𝗥𝗬𝗢𝗕𝗢𝗧-group-white.svg)](https://t.me/kryoli_bot) 
+- [![Generic badge](https://img.shields.io/badge/@𝗞𝗥𝗬𝗢𝗕𝗢𝗧-group-brown.svg)](https://t.me/kryoli_bot) 
 𝘎𝘦𝘵 𝘺𝘰𝘶𝘳 𝘬𝘳𝘺𝘰-𝘬𝘦𝘺 𝘧𝘳𝘰𝘮 𝘩𝘦𝘳
 - [![Generic badge](https://img.shields.io/badge/@tronxli-group-white.svg)](https://t.me/tronxli) The working userbot instance can be found here 
 
