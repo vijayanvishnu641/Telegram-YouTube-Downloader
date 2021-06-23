@@ -1,5 +1,5 @@
 🍟♪ｏﾟ♪ﾟ+ﾟ♪ﾟｏ♪|  ÇÄLÌ†RÖñ×  |♪ｏﾟ♪ﾟ+ﾟ♪ﾟｏ♪🍟
-
+[![Open Source Love svg3](https://badges.frapsoft.com/os/v3/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 # 🔥⭐️『 𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦 𝐘𝐨𝐮𝐓𝐮𝐛𝐞 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫 』⭐️🔥
 
 <img align="centre" src="https://telegra.ph/file/3f50d5aefad4cab71e754.jpg"/>
@@ -8,7 +8,7 @@
 <img align="right" src="https://telegra.ph/file/98ca97e5eeafe2f7a11eb.jpg"     width="256"      height="256" />
 <img align="left" src="https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg" alt="calitronx"/>
 <img align="right" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"/>
-[![Open Source Love svg3](https://badges.frapsoft.com/os/v3/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
+
 
 ## ❓ WΉY MΛDΣ ƬΉIS BӨƬ?
 -𝚃𝚑𝚒𝚜 𝚋𝚘𝚝 𝚠𝚒𝚕𝚕 𝚜𝚎𝚗𝚍 𝚢𝚘𝚞 𝚍𝚒𝚛𝚎𝚌𝚝 𝚊𝚞𝚍𝚒𝚘 𝚊𝚗𝚍 𝚟𝚒𝚍𝚎𝚘 𝚍𝚘𝚠𝚗𝚕𝚘𝚊𝚍 𝚕𝚒𝚗𝚔.
