@@ -1,15 +1,10 @@
 # 🍟♪ｏﾟ♪ﾟ+ﾟ♪ﾟｏ♪| ÇÄLÌ†RÖñ× |♪ｏﾟ♪ﾟ+ﾟ♪ﾟｏ♪🍟
 
 # 🔥⭐️『 𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦 𝐘𝐨𝐮𝐓𝐮𝐛𝐞 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫 』⭐️🔥
-<p align="left"></p>
-<img src="https://telegra.ph/file/3f50d5aefad4cab71e754.jpg"     width="200"      height="200" />
-</p>
-<p align="centre"></p>
-<img src="https://telegra.ph/file/64a62cfeb58eb3ebac198.jpg"     width="200"      height="200" />
-</p>
-<p align="right"></p>
-<img src="https://telegra.ph/file/98ca97e5eeafe2f7a11eb.jpg"     width="200"      height="200" />
-</p>
+
+<img align="left" src="https://telegra.ph/file/3f50d5aefad4cab71e754.jpg"     width="200"      height="200" />
+<img align="centre" src="https://telegra.ph/file/64a62cfeb58eb3ebac198.jpg"     width="200"      height="200" />
+<img align="right" src="https://telegra.ph/file/98ca97e5eeafe2f7a11eb.jpg"     width="200"      height="200" />
 <img align="centre" src="https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg" alt="calitronx"/>
 
 
