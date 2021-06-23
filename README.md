@@ -1,7 +1,9 @@
 # 🍟♪ｏﾟ♪ﾟ+ﾟ♪ﾟｏ♪| ÇÄLÌ†RÖñ× |♪ｏﾟ♪ﾟ+ﾟ♪ﾟｏ♪🍟
 
 # 🔥⭐️『 𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦 𝐘𝐨𝐮𝐓𝐮𝐛𝐞 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫 』⭐️🔥
-<p align="centre"><img src="https://telegra.ph/file/3f50d5aefad4cab71e754.jpg"></p>
+<p align="centre"></p>
+<img src="https://telegra.ph/file/3f50d5aefad4cab71e754.jpg"     width="400"      height="500" />
+</p>
 <img align="centre" src="https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg" alt="calitronx"/>
 
 
