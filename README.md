@@ -6,7 +6,9 @@
 
 <img align="left" src="https://telegra.ph/file/64a62cfeb58eb3ebac198.jpg"     width="256"      height="256" />
 <img align="right" src="https://telegra.ph/file/98ca97e5eeafe2f7a11eb.jpg"     width="256"      height="256" />
+[![Open Source Love svg3](https://badges.frapsoft.com/os/v3/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 <img align="centre" src="https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg" alt="calitronx"/>
+<img aligh="centre" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"/>
 
 
 ## ❓ WΉY MΛDΣ ƬΉIS BӨƬ?
