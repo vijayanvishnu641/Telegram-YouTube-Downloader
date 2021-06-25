@@ -27,10 +27,10 @@ async def start(
              url="https://t.me/calitrox")],
         [InlineKeyboardButton(
             "🛡 ÇðÐêß¥",
-            url="https://t.me/calitronx")],
+            url="https://t.me/HypeVoidSoul")],
         [InlineKeyboardButton(
             "🍷 Gï†hµß",
-            url="https://github.com/calitronx?tab=repositories")],
+            url="https://github.com/HypeVoidSoul?tab=repositories")],
             ])
     '🍟==============================『🍗 ʏօʊȶʊɮɛʟɨ 🍰』==============================🍟'
     welcomed = f"""
