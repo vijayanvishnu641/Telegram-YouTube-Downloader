@@ -21,10 +21,10 @@ async def start(
     joinButton = InlineKeyboardMarkup([
         [InlineKeyboardButton(
             "🍺 Grðµþ:",
-            url="https://t.me/tronxli")],
+            url="https://t.me/hypevoids")],
         [InlineKeyboardButton(
             "📡 ßð†§ Hµß:",
-             url="https://t.me/calitrox")],
+             url="https://t.me/hypevoidlab")],
         [InlineKeyboardButton(
             "🛡 ÇðÐêß¥",
             url="https://t.me/HypeVoidSoul")],
