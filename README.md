@@ -19,7 +19,7 @@
 🍟ｏｏｏｏｏH¥þêVðïÐ§ｏｏｏｏｏ🍟
 
 ## 〽️ MΣΣƬ US ӨЯ CΉΣCK ӨƬΉΣЯ BӨƬS
-- [![Generic badge](https://img.shields.io/badge/𝙲𝙰𝙻𝚃𝙸𝙽𝙵𝙾_𝙱𝙾𝚃-Vïå_ßð†-orange.svg)](https://t.me/caltinfo_bot) 
+- [![Generic badge](https://img.shields.io/badge/𝙷𝚢𝚙𝚎𝚅𝚘𝚒𝚍𝙱𝚘𝚝-Vïå_ßð†-orange.svg)](https://t.me/HypeVoidBot) 
 𝘛𝘶𝘳𝘯 𝘰𝘯 𝘣𝘰𝘵 𝘪𝘯 𝘵𝘦𝘭𝘦𝘨𝘳𝘢𝘮 𝘢𝘯𝘥 𝘵𝘺𝘱𝘦 /us
 - [![Generic badge](https://img.shields.io/badge/𝙺𝚁𝚈𝙾𝙺𝙴𝚈_𝙱𝙾𝚃-Vïå_ßð†-brown.svg)](https://t.me/kryoli_bot) 
 𝘎𝘦𝘵 𝘺𝘰𝘶𝘳 𝘬𝘳𝘺𝘰-𝘬𝘦𝘺 𝘧𝘳𝘰𝘮 𝘩𝘦𝘳!
