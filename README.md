@@ -1,48 +1,39 @@
-<h1 align="center">Hi 👋, I'm HypeVoidSoul™</h1> 
-<img align="left" src="https://komarev.com/ghpvc/?username=HypeVoidSoul&color=red" alt="HypeVoidSoul"/>
-<img align="right" src="https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg" alt="HypeVoidSoul"/>
-<p align="centre"> <img src="https://telegra.ph/file/88c2ba0791ed576f602bc.jpg" />
-<h3 align="left">A basic student learing coding from India!</h3> <img src="http://ForTheBadge.com/images/badges/made-with-python.svg" />
+🍟♪ｏﾟ♪ﾟ+ﾟ♪ﾟｏ♪ｏﾟ♪ﾟ+ﾟ♪ﾟｏ♪=====__Wê Ärê H¥þêVðïÐ§__=====♪ｏﾟ♪ﾟ+ﾟ♪ﾟｏ♪ｏﾟ♪ﾟ+ﾟ♪ﾟｏ♪🍟
+[![Open Source Love svg3](https://badges.frapsoft.com/os/v3/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
+# 🔥⭐️『 𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦 𝐘𝐨𝐮𝐓𝐮𝐛𝐞 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫 』⭐️🔥
 
-<img src="https://github-profile-trophy.vercel.app/?username=HypeVoidSoul&theme=dracula&column=3&margin-w=15&margin-h=15" alt="HypeVoidSoul" /> </p>
-[![Sparkline](https://stars.medv.io/Naereen/badges.svg)](https://stars.medv.io/Naereen/badges)
+<img align="centre" src="https://telegra.ph/file/3f50d5aefad4cab71e754.jpg"/>
+
+<img align="left" src="https://telegra.ph/file/64a62cfeb58eb3ebac198.jpg"     width="256"      height="256" />
+<img align="right" src="https://telegra.ph/file/98ca97e5eeafe2f7a11eb.jpg"     width="256"      height="256" />
+<img align="left" src="https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg" alt="HypeVoidSoul"/>
+<img align="right" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"/>
 
 
+## ❓ WΉY MΛDΣ ƬΉIS BӨƬ?
+-𝚃𝚑𝚒𝚜 𝚋𝚘𝚝 𝚠𝚒𝚕𝚕 𝚜𝚎𝚗𝚍 𝚢𝚘𝚞 𝚍𝚒𝚛𝚎𝚌𝚝 𝚊𝚞𝚍𝚒𝚘 𝚊𝚗𝚍 𝚟𝚒𝚍𝚎𝚘 𝚍𝚘𝚠𝚗𝚕𝚘𝚊𝚍 𝚕𝚒𝚗𝚔.
+-𝙲𝚑𝚘𝚘𝚜𝚎 𝚝𝚑𝚎 𝚚𝚞𝚊𝚕𝚒𝚝𝚢 𝚊𝚗𝚍 𝚐𝚎𝚝 𝚢𝚘𝚞𝚛 𝚍𝚎𝚜𝚒𝚛𝚎𝚍 𝚊𝚞𝚍𝚒𝚘/𝚟𝚒𝚍𝚎𝚘 𝚒𝚗 𝚏𝚎𝚠 𝚖𝚘𝚖𝚎𝚗𝚝𝚜.
 
-- 🔭 I’m currently working on **python_telegram_bots**
-
-- 🌱 I’m currently learning **C,Python,Shell,Java,Html**
-
-- 🤝 I’m looking for help with **telegram_bots**
-
-- 👨‍💻 All of my projects are available at [TelegramChannel](http://t.me/hypevoidlab) [TelegramGroup](http://t.me/hypevoids)
+🍟ｏｏｏｏｏH¥þêVðïÐ§ｏｏｏｏｏ🍟
 
 ## 〽️ MΣΣƬ US ӨЯ CΉΣCK ӨƬΉΣЯ BӨƬS
-- [![Generic badge](https://img.shields.io/badge/𝙲𝙰𝙻𝚃𝙸𝙽𝙵𝙾_𝙱𝙾𝚃-Vïå_ßð†-orange.svg)](https://t.me/HypeVoidBot) 
+- [![Generic badge](https://img.shields.io/badge/𝙲𝙰𝙻𝚃𝙸𝙽𝙵𝙾_𝙱𝙾𝚃-Vïå_ßð†-orange.svg)](https://t.me/caltinfo_bot) 
 𝘛𝘶𝘳𝘯 𝘰𝘯 𝘣𝘰𝘵 𝘪𝘯 𝘵𝘦𝘭𝘦𝘨𝘳𝘢𝘮 𝘢𝘯𝘥 𝘵𝘺𝘱𝘦 /us
 - [![Generic badge](https://img.shields.io/badge/𝙺𝚁𝚈𝙾𝙺𝙴𝚈_𝙱𝙾𝚃-Vïå_ßð†-brown.svg)](https://t.me/kryoli_bot) 
 𝘎𝘦𝘵 𝘺𝘰𝘶𝘳 𝘬𝘳𝘺𝘰-𝘬𝘦𝘺 𝘧𝘳𝘰𝘮 𝘩𝘦𝘳!
 
-- 📫 How to reach me **HypeVoidSoul@gmail.com**
+## 💠 DΣPLӨY
+- ꜰɪʀꜱᴛ ꜰᴏʀᴋ ᴀɴᴅ ꜱᴛᴀʀ ᴛʜᴇ ʀᴇᴘᴏ ᴀɴᴅ ᴛʜᴇɴ ᴄʜᴀɴɢᴇ [app](app) ᴛᴏ app.json
 
-- ⚡ Fun fact **I can play all instruments and played around 300+ vgames**
+- [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/HypeVoidSoul/Telegram-YouTube-Downloader.git/tree/Vrtx) 𝘌𝘯𝘢𝘣𝘭𝘦 𝘵𝘩𝘦 𝘥𝘺𝘯𝘰 𝘪𝘯 𝘩𝘦𝘳𝘰𝘬𝘶 𝘪𝘧 𝘶 𝘥𝘦𝘱𝘭𝘰𝘺𝘦𝘥 𝘶𝘳 𝘣𝘰𝘵 𝘪𝘯 𝘏𝘦𝘳𝘰𝘬𝘶
 
-<h3 align="left">Connect with me:(🔻beta)</h3>
-
-<p align="left">
-<a href="https://linkedin.com/in/mastermind-vrtx-224906211" target="blank"><img align="center" src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="HypeVoidSoul"/></a>
-<a href="https://fb.com/shovitxhawk" target="blank"><img align="center" src="https://img.shields.io/badge/Facebook-1877F2?style=for-the-badge&logo=facebook&logoColor=white" alt="shovitxhawk"/></a>
-<a href="https://instagram.com/HypeVoidSoul" target="blank"><img align="center" src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="HypeVoidSoul"/></a>
-<a href="https://discord.gg/https://discord.gg/HkupYKErhW" target="blank"><img align="center" src="https://img.shields.io/badge/Discord-7289DA?style=for-the-badge&logo=discord&logoColor=white" alt="https://discord.gg/HkupYKErhW"/></a>
-</p>
-
-<h3 align="left">Languages and Tools:</h3>
-
-<p align="left"> <a href="https://developer.android.com" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/android/android-original-wordmark.svg" alt="android" width="40" height="40"/> </a> <a href="https://aws.amazon.com" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="aws" width="40" height="40"/> </a> <a href="https://www.cprogramming.com/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" alt="c" width="40" height="40"/> </a> <a href="https://www.docker.com/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original-wordmark.svg" alt="docker" width="40" height="40"/> </a> <a href="https://git-scm.com/" target="_blank"> <img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" alt="git" width="40" height="40"/> </a> <a href="https://www.linux.org/" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" alt="linux" width="40" height="40"/> </a> <a href="https://www.photoshop.com/en" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/photoshop/photoshop-line.svg" alt="photoshop" width="40" height="40"/> </a> <a href="https://www.python.org" target="_blank"> <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" alt="python" width="40" height="40"/> </a> </p>
-
-<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=HypeVoidSoul&show_icons=true&locale=en&layout=compact" alt="HypeVoidSoul" /></p>
-
-<p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=HypeVoidSoul&show_icons=true&locale=en" alt="HypeVoidSoul" /></p>
-
-<p><img align="center" src="https://github-readme-streak-stats.herokuapp.com/?user=HypeVoidSoul&" alt="HypeVoidSoul" /></p>
-
+## 📜 LICΣПSΣ
+- 𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦 𝐘𝐨𝐮𝐓𝐮𝐛𝐞 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫 𝘪𝘴 𝘭𝘪𝘤𝘦𝘯𝘴𝘦𝘥 𝘶𝘯𝘥𝘦𝘳 𝘵𝘩𝘦 𝘎𝘕𝘜 𝘎𝘦𝘯𝘦𝘳𝘢𝘭 𝘗𝘶𝘣𝘭𝘪𝘤 𝘓𝘪𝘤𝘦𝘯𝘴𝘦 𝘷3.0[GNU V3.0](LICENSE)
+```sh
+* pēr๓iʂʂi໐ຖŞ 💢
+✔ ᴄᴏᴍᴍᴇʀᴄɪᴀʟ ᴜꜱᴇ
+✔ ᴍᴏᴅɪꜰɪᴄᴀᴛɪᴏɴ
+✔ ᴅɪꜱᴛʀɪʙᴜᴛɪᴏɴ
+✔ ᴘʀɪᴠᴀᴛᴇ ᴜꜱᴇ 
+```
+🍟♪ｏﾟ♪ﾟ+ﾟ♪ﾟｏ♪ｏﾟ♪ﾟ+ﾟ♪ﾟｏ♪=====__Wê Ärê H¥þêVðïÐ§__=====♪ｏﾟ♪ﾟ+ﾟ♪ﾟｏ♪ｏﾟ♪ﾟ+ﾟ♪ﾟｏ♪🍟
