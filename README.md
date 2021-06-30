@@ -1,11 +1,8 @@
 🍟♪ｏﾟ♪ﾟ+ﾟ♪ﾟｏ♪ｏﾟ♪ﾟ+ﾟ♪ﾟｏ♪=====__Wê Ärê H¥þêVðïÐ§__=====♪ｏﾟ♪ﾟ+ﾟ♪ﾟｏ♪ｏﾟ♪ﾟ+ﾟ♪ﾟｏ♪🍟
 [![Open Source Love svg3](https://badges.frapsoft.com/os/v3/open-source.svg?v=103)](https://github.com/ellerbrock/open-source-badges/)
 # 🔥⭐️『 𝐓𝐞𝐥𝐞𝐠𝐫𝐚𝐦 𝐘𝐨𝐮𝐓𝐮𝐛𝐞 𝐃𝐨𝐰𝐧𝐥𝐨𝐚𝐝𝐞𝐫 』⭐️🔥
-
 <img align="centre" src="https://telegra.ph/file/3f50d5aefad4cab71e754.jpg"/>
 
-<img align="left" src="https://telegra.ph/file/64a62cfeb58eb3ebac198.jpg"     width="256"      height="256" />
-<img align="right" src="https://telegra.ph/file/98ca97e5eeafe2f7a11eb.jpg"     width="256"      height="256" />
 <img align="left" src="https://img.shields.io/badge/Made%20for-VSCode-1f425f.svg" alt="HypeVoidSoul"/>
 <img align="right" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg"/>
 
